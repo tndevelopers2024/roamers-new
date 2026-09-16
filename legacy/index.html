@@ -1,0 +1,926 @@
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Roamers — Travel solo. Leave with a squad.</title>
+<meta name="description" content="Roamers is a social travel club. Book one seat, show up solo, and leave with a squad. Small-group trips to Ladakh, Spiti, Meghalaya, Kerala, Sri Lanka, Thailand and 40+ destinations.">
+<meta name="theme-color" content="#0E2229">
+<meta property="og:title" content="Roamers — Travel solo. Leave with a squad.">
+<meta property="og:description" content="Book one seat. Show up solo. Come home with a squad.">
+<meta property="og:image" content="assets/img/hero-squad-1600.webp">
+<link rel="icon" href="assets/brand/favicon-64.png" type="image/png">
+<link rel="apple-touch-icon" href="assets/brand/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,100..900&family=Instrument+Serif:ital@0;1&family=Geist+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="preload" as="image" href="assets/img/hero-squad-1600.webp" imagesrcset="assets/img/hero-squad-1000.webp 1000w, assets/img/hero-squad-1600.webp 1600w, assets/img/hero-squad-2880.webp 2880w" imagesizes="200vw" fetchpriority="high">
+<link rel="stylesheet" href="assets/css/base.css">
+<link rel="stylesheet" href="assets/css/sections.css">
+<script>document.documentElement.classList.replace('no-js','js')</script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<!-- Loader: a split-flap departure board -->
+<div class="loader" aria-hidden="true">
+  <div class="loader__board">
+    <img class="loader__pin" src="assets/brand/roamers-pin.png" width="189" height="256" alt="">
+    <p class="loader__row mono"><span>Now boarding</span><span>Gate 01</span></p>
+    <p class="loader__word" data-flap="ROAMERS">ROAMERS</p>
+    <p class="loader__row mono"><span>Seat 1 of 1 — solo</span><span class="loader__status">On time</span></p>
+  </div>
+</div>
+
+<!-- Page-exit curtain -->
+<div class="curtain" aria-hidden="true"><p class="curtain__label"></p></div>
+
+<!-- Cursor (fine pointers only) -->
+<div class="cursor" aria-hidden="true"><span class="cursor__ring"></span><span class="cursor__label"></span></div>
+
+<header class="nav" data-theme="dark">
+  <a class="nav__logo" href="#top" aria-label="Roamers — back to top">
+    <img class="nav__pin" src="assets/brand/roamers-pin.png" width="189" height="256" alt="">
+    <span class="nav__word" aria-hidden="true"></span>
+  </a>
+  <p class="nav__chapter mono" aria-hidden="true"><span class="nav__chapter-num">01</span><span class="nav__chapter-name">Discover</span></p>
+  <nav class="nav__links" aria-label="Primary">
+    <a href="#trips">Trips</a>
+    <a href="#departures">Departures</a>
+    <a href="#ways">Experiences</a>
+    <a href="#meetups">Meetups</a>
+    <a href="#proof">About</a>
+  </nav>
+  <a class="btn btn--nav" href="#departures" data-magnetic><span>Book a seat</span><i class="btn__arrow" aria-hidden="true">→</i></a>
+  <button class="nav__menu" type="button" aria-expanded="false" aria-controls="menu"><span class="nav__menu-label">Menu</span><i aria-hidden="true"></i></button>
+</header>
+
+<div class="menu" id="menu" aria-hidden="true">
+  <div class="menu__inner">
+    <nav class="menu__links" aria-label="Menu">
+      <a href="#departures"><span class="mono">01</span>Departures</a>
+      <a href="#trips"><span class="mono">02</span>Trips</a>
+      <a href="#season"><span class="mono">03</span>Season</a>
+      <a href="#meetups"><span class="mono">04</span>Meetups</a>
+      <a href="#proof"><span class="mono">05</span>About</a>
+    </nav>
+    <a class="menu__next" href="https://www.roamers.in/ladakh-circuit">
+      <img src="assets/img/ch-ladakh-900.webp" width="900" height="439" alt="" loading="lazy">
+      <span class="mono">Next departure</span>
+      <strong>Ladakh — Sat, 19 Sep</strong>
+    </a>
+    <div class="menu__contact mono">
+      <a href="tel:+918122121066">+91 81221 21066</a>
+      <a href="https://wa.me/918122121066">WhatsApp</a>
+      <a href="https://www.instagram.com/roamers.in/">Instagram</a>
+    </div>
+  </div>
+</div>
+
+<main id="main">
+
+  <!-- 01 HERO — the pull-back -->
+  <section class="hero" id="top" data-chapter="01" data-chapter-name="Discover" aria-labelledby="hero-title">
+    <div class="hero__stage">
+      <div class="hero__media">
+        <img class="hero__img" src="assets/img/hero-squad-1600.webp"
+          srcset="assets/img/hero-squad-1000.webp 1000w, assets/img/hero-squad-1600.webp 1600w, assets/img/hero-squad-2880.webp 2880w"
+          sizes="200vw" width="2880" height="1920" fetchpriority="high"
+          alt="Six friends silhouetted on a hilltop at sunrise, arms raised">
+        <div class="hero__shade"></div>
+        <div class="grain"></div>
+      </div>
+
+      <div class="hero__over">
+        <p class="hero__fig mono"><span>Fig. 01</span> One traveller. One seat.</p>
+        <h1 class="hero__title" id="hero-title">
+          <span class="hero__solo">Travel solo.</span>
+          <span class="hero__squad">Leave with a squad.</span>
+        </h1>
+        <div class="hero__foot">
+          <p class="hero__lede">Roamers is a social travel club. Book one seat, show up on your own — we handle the route, the stays and, somehow, the friendships.</p>
+          <div class="hero__ctas">
+            <a class="btn btn--light" href="#trips" data-magnetic><span>Explore Trips</span><i class="btn__arrow" aria-hidden="true">→</i></a>
+            <a class="link link--light" href="#people">Meet the Roamers</a>
+          </div>
+        </div>
+        <p class="hero__scroll mono" aria-hidden="true"><i></i>Scroll to pull back</p>
+      </div>
+
+      <div class="hero__end" aria-hidden="true">
+        <p class="hero__end-fig mono"><span>Fig. 02</span> Same sunrise. Five new friends.</p>
+        <p class="hero__end-line">Leave with a <em>squad.</em></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 02 BRAND STATEMENT -->
+  <section class="statement" data-chapter="01" data-chapter-name="Discover" aria-labelledby="statement-title">
+    <div class="wrap">
+      <p class="eyebrow mono">(01) The idea</p>
+      <h2 class="statement__text" id="statement-title">
+        You don’t need a travel group<span class="inline-img"><img src="assets/img/st-group-640.webp" width="640" height="640" alt="" loading="lazy"></span>.
+        You just need the courage<span class="inline-img inline-img--tall"><img src="assets/img/st-rider-640.webp" width="640" height="800" alt="" loading="lazy"></span> to go.
+        We’ll bring the <em>people</em><span class="inline-img"><img src="assets/img/st-joy-640.webp" width="640" height="640" alt="" loading="lazy"></span>.
+      </h2>
+      <div class="statement__grid">
+        <p class="statement__lede">Roamers is a social travel club based in Chennai. We run small-group trips across India and beyond, built for everyone who is done waiting for their friends’ calendars to line up. Come alone or bring a friend — either way, you won’t be alone for long.</p>
+        <ol class="pillars">
+          <li><span class="pillars__n mono">01</span><h3>Everything included</h3><p>Transport, stays, meals, permits and the plan. One booking. Zero spreadsheets.</p></li>
+          <li><span class="pillars__n mono">02</span><h3>Led by trip captains</h3><p>Leaders and local guides who know the shortcut, the sunset spot and the good chai.</p></li>
+          <li><span class="pillars__n mono">03</span><h3>Off the brochure</h3><p>Hand-picked food, stays and places you won’t find on a tour-bus itinerary.</p></li>
+        </ol>
+      </div>
+    </div>
+  </section>
+
+  <!-- 03 SOCIAL TRAVEL CONCEPT — Day 0 to Day 7 -->
+  <section class="how" id="how" data-chapter="02" data-chapter-name="Imagine" aria-labelledby="how-title">
+    <div class="wrap how__head">
+      <p class="eyebrow mono">(02) How it works</p>
+      <h2 class="h-display" id="how-title">How strangers<br>become a <em>squad.</em></h2>
+      <p class="how__sub">It takes about a week. Here’s the play-by-play.</p>
+    </div>
+    <div class="how__body">
+      <div class="how__visual" aria-hidden="true">
+        <div class="how__frames">
+          <img class="how__img is-active" src="assets/img/day0-1400.webp" srcset="assets/img/day0-800.webp 800w, assets/img/day0-1400.webp 1400w" sizes="50vw" width="1400" height="934" alt="" loading="lazy">
+          <img class="how__img" src="assets/img/day1-1400.webp" srcset="assets/img/day1-800.webp 800w, assets/img/day1-1400.webp 1400w" sizes="50vw" width="1400" height="933" alt="" loading="lazy">
+          <img class="how__img" src="assets/img/day3-1440.webp" srcset="assets/img/day3-800.webp 800w, assets/img/day3-1440.webp 1440w" sizes="50vw" width="1440" height="1800" alt="" loading="lazy">
+          <img class="how__img" src="assets/img/day7-1400.webp" srcset="assets/img/day7-800.webp 800w, assets/img/day7-1400.webp 1400w" sizes="50vw" width="1400" height="933" alt="" loading="lazy">
+        </div>
+        <div class="how__net"><svg viewBox="0 0 300 300"></svg></div>
+        <p class="how__count mono"><span class="how__count-day">Day 0</span><span class="how__count-text">Just you.</span></p>
+      </div>
+      <ol class="how__steps">
+        <li class="how__step" data-count="Just you.">
+          <p class="how__day">Day 0</p>
+          <h3>Choose a trip.</h3>
+          <p>Pick a place, a date, a vibe. Book one seat — really, just one. Then you’re added to a group chat full of people you haven’t met yet.</p>
+          <img class="how__step-img" src="assets/img/day0-800.webp" width="800" height="534" alt="A traveller with a backpack checking the departures board" loading="lazy">
+        </li>
+        <li class="how__step" data-count="You + a bus full of strangers.">
+          <p class="how__day">Day 1</p>
+          <h3>Meet your people.</h3>
+          <p>Awkward hellos at the pickup point. Snacks get shared by the first chai stop, and by dinner there’s a running joke. Trip captains are suspiciously good at icebreakers.</p>
+          <img class="how__step-img" src="assets/img/day1-800.webp" width="800" height="533" alt="Two friends laughing together in warm light" loading="lazy">
+        </li>
+        <li class="how__step" data-count="You + a bus full of friends.">
+          <p class="how__day">Day 3</p>
+          <h3>Explore together.</h3>
+          <p>Summits, backwaters, night markets, stargazing at 4,000 metres. The plan is handled, so all you do is show up for the moments — with people as curious as you are.</p>
+          <img class="how__step-img" src="assets/img/day3-800.webp" width="800" height="1000" alt="A Roamers group trekking through the Valley of Flowers" loading="lazy">
+        </li>
+        <li class="how__step" data-count="One squad. One group chat that never sleeps.">
+          <p class="how__day">Day 7</p>
+          <h3>Come back with stories.</h3>
+          <p>And a camera roll you’ll scroll for months, a reunion already on the calendar, and a group chat that refuses to go quiet.</p>
+          <img class="how__step-img" src="assets/img/day7-800.webp" width="800" height="533" alt="Friends gathered around a campfire in the forest at night" loading="lazy">
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- 04 FEATURED ADVENTURES — horizontal chapters -->
+  <section class="trips" id="trips" data-chapter="03" data-chapter-name="Explore" aria-labelledby="trips-title">
+    <div class="trips__pin">
+      <div class="trips__track">
+        <div class="trips__intro">
+          <p class="eyebrow mono">(03) Featured adventures</p>
+          <h2 class="h-display" id="trips-title">Six places.<br>Six <em>chapters.</em></h2>
+          <p class="trips__lede">Upcoming group departures this season. Every one of them is solo-friendly, every one of them is sorted end to end.</p>
+          <p class="trips__hint mono"><i aria-hidden="true"></i><span class="hint-desk">Keep scrolling</span><span class="hint-touch">Swipe</span></p>
+        </div>
+
+        <article class="chapter" data-cursor="View trip">
+          <a class="chapter__link" href="https://www.roamers.in/ladakh-circuit" data-transition="Ladakh">
+            <div class="chapter__media"><img class="chapter__img" src="assets/img/ch-ladakh-1600.webp" srcset="assets/img/ch-ladakh-900.webp 900w, assets/img/ch-ladakh-1600.webp 1600w" sizes="(min-width: 900px) 60vw, 90vw" width="1600" height="780" alt="A rider on a motorbike kicking up dust on a Ladakh road" loading="lazy"></div>
+            <figure class="chapter__inset"><img src="assets/img/ch-ladakh-2-800.webp" width="800" height="1000" alt="" loading="lazy"><figcaption class="mono">Pangong road, 4,225 m</figcaption></figure>
+            <p class="chapter__num mono">Ch. 01</p>
+            <h3 class="chapter__name">Ladakh</h3>
+            <p class="chapter__line">Where the road runs out of oxygen — never out of stories.</p>
+            <dl class="chapter__meta">
+              <div><dt>Duration</dt><dd>8D / 7N</dd></div>
+              <div><dt>Starts</dt><dd>Ex Leh</dd></div>
+              <div class="wide"><dt>Route</dt><dd>Leh · Khardung La · Nubra · Pangong</dd></div>
+              <div class="wide"><dt>Next departures</dt><dd>19 Sep · 26 Sep</dd></div>
+            </dl>
+            <span class="chapter__cta">View trip <i aria-hidden="true">→</i></span>
+          </a>
+        </article>
+
+        <article class="chapter" data-cursor="View trip">
+          <a class="chapter__link" href="https://www.roamers.in/spiti-chandratal" data-transition="Spiti">
+            <div class="chapter__media"><img class="chapter__img" src="assets/img/ch-spiti-1920.webp" srcset="assets/img/ch-spiti-960.webp 960w, assets/img/ch-spiti-1920.webp 1920w" sizes="(min-width: 900px) 60vw, 90vw" width="1920" height="1280" alt="Key Monastery on its hilltop in Spiti, lit by late sun" loading="lazy"></div>
+            <figure class="chapter__inset"><img src="assets/img/ch-spiti-2-800.webp" width="800" height="1000" alt="" loading="lazy"><figcaption class="mono">The squad, Kaza</figcaption></figure>
+            <p class="chapter__num mono">Ch. 02</p>
+            <h3 class="chapter__name">Spiti</h3>
+            <p class="chapter__line">Moonscapes, monasteries and the quietest night sky you’ll ever share.</p>
+            <dl class="chapter__meta">
+              <div><dt>Duration</dt><dd>7D / 6N</dd></div>
+              <div><dt>Starts</dt><dd>Ex Delhi</dd></div>
+              <div class="wide"><dt>Route</dt><dd>Kalpa · Kaza · Chandratal</dd></div>
+              <div class="wide"><dt>Next departures</dt><dd>19 Sep · 3 Oct</dd></div>
+            </dl>
+            <span class="chapter__cta">View trip <i aria-hidden="true">→</i></span>
+          </a>
+        </article>
+
+        <article class="chapter" data-cursor="View trip">
+          <a class="chapter__link" href="https://www.roamers.in/meghalaya" data-transition="Meghalaya">
+            <div class="chapter__media"><img class="chapter__img" src="assets/img/ch-meghalaya-1920.webp" srcset="assets/img/ch-meghalaya-960.webp 960w, assets/img/ch-meghalaya-1920.webp 1920w" sizes="(min-width: 900px) 60vw, 90vw" width="1920" height="1440" alt="The glass-clear Umngot river in Meghalaya" loading="lazy"></div>
+            <figure class="chapter__inset"><img src="assets/img/ch-meghalaya-2-800.webp" width="800" height="600" alt="" loading="lazy"><figcaption class="mono">Umngot, Dawki</figcaption></figure>
+            <p class="chapter__num mono">Ch. 03</p>
+            <h3 class="chapter__name">Meghalaya</h3>
+            <p class="chapter__line">Living root bridges, rivers like glass, and rain that feels like a welcome.</p>
+            <dl class="chapter__meta">
+              <div><dt>Duration</dt><dd>6D / 5N</dd></div>
+              <div><dt>Starts</dt><dd>Ex Guwahati</dd></div>
+              <div class="wide"><dt>Route</dt><dd>Guwahati · Shillong · Cherrapunjee</dd></div>
+              <div class="wide"><dt>Next departures</dt><dd>3 Oct · 10 Oct · 17 Oct</dd></div>
+            </dl>
+            <span class="chapter__cta">View trip <i aria-hidden="true">→</i></span>
+          </a>
+        </article>
+
+        <article class="chapter" data-cursor="View trip">
+          <a class="chapter__link" href="https://www.roamers.in/kerala-grand-circuit" data-transition="Kerala">
+            <div class="chapter__media"><img class="chapter__img" src="assets/img/ch-kerala-1500.webp" srcset="assets/img/ch-kerala-900.webp 900w, assets/img/ch-kerala-1500.webp 1500w" sizes="(min-width: 900px) 60vw, 90vw" width="1500" height="1000" alt="Mist rolling over the tea hills of Munnar" loading="lazy"></div>
+            <figure class="chapter__inset"><img src="assets/img/ch-kerala-2-800.webp" width="800" height="450" alt="" loading="lazy"><figcaption class="mono">Backwaters, Alleppey</figcaption></figure>
+            <p class="chapter__num mono">Ch. 04</p>
+            <h3 class="chapter__name">Kerala</h3>
+            <p class="chapter__line">Backwater mornings, tea-hill afternoons, cliffside sunsets in Varkala.</p>
+            <dl class="chapter__meta">
+              <div><dt>Duration</dt><dd>7D / 6N</dd></div>
+              <div><dt>Starts</dt><dd>Ex Kochi</dd></div>
+              <div class="wide"><dt>Route</dt><dd>Kochi · Munnar · Vagamon · Varkala · Alleppey</dd></div>
+              <div class="wide"><dt>Next departures</dt><dd>3 Oct · 17 Oct · 24 Oct</dd></div>
+            </dl>
+            <span class="chapter__cta">View trip <i aria-hidden="true">→</i></span>
+          </a>
+        </article>
+
+        <article class="chapter" data-cursor="View trip">
+          <a class="chapter__link" href="https://www.roamers.in/srilanka" data-transition="Sri Lanka">
+            <div class="chapter__media"><img class="chapter__img" src="assets/img/ch-srilanka-1920.webp" srcset="assets/img/ch-srilanka-960.webp 960w, assets/img/ch-srilanka-1920.webp 1920w" sizes="(min-width: 900px) 60vw, 90vw" width="1920" height="1200" alt="A blue train crossing the Nine Arch Bridge near Ella" loading="lazy"></div>
+            <figure class="chapter__inset"><img src="assets/img/ch-srilanka-2-800.webp" width="800" height="533" alt="" loading="lazy"><figcaption class="mono">Galle, golden hour</figcaption></figure>
+            <p class="chapter__num mono">Ch. 05</p>
+            <h3 class="chapter__name">Sri Lanka</h3>
+            <p class="chapter__line">Train windows, tea country, and the slow coast from Ella to Galle.</p>
+            <dl class="chapter__meta">
+              <div><dt>Duration</dt><dd>7D / 6N</dd></div>
+              <div><dt>Starts</dt><dd>Ex Colombo</dd></div>
+              <div class="wide"><dt>Route</dt><dd>Sigiriya · Kandy · Ella · Galle · Bentota</dd></div>
+              <div class="wide"><dt>Next departures</dt><dd>10 Oct · 24 Oct</dd></div>
+            </dl>
+            <span class="chapter__cta">View trip <i aria-hidden="true">→</i></span>
+          </a>
+        </article>
+
+        <article class="chapter" data-cursor="View trip">
+          <a class="chapter__link" href="https://www.roamers.in/trips" data-transition="Thailand">
+            <div class="chapter__media"><img class="chapter__img" src="assets/img/ch-thailand-2000.webp" srcset="assets/img/ch-thailand-960.webp 960w, assets/img/ch-thailand-2000.webp 2000w" sizes="(min-width: 900px) 60vw, 90vw" width="2000" height="1384" alt="Longtail boats moored below limestone cliffs in Thailand" loading="lazy"></div>
+            <figure class="chapter__inset"><img src="assets/img/ch-thailand-2-800.webp" width="800" height="578" alt="" loading="lazy"><figcaption class="mono">Railay, low tide</figcaption></figure>
+            <p class="chapter__num mono">Ch. 06</p>
+            <h3 class="chapter__name">Thailand</h3>
+            <p class="chapter__line">Island hops, 2 a.m. street food, and a new friend on every longtail.</p>
+            <dl class="chapter__meta">
+              <div><dt>Duration</dt><dd>6D / 5N</dd></div>
+              <div><dt>Starts</dt><dd>Ex Bangkok</dd></div>
+              <div class="wide"><dt>Route</dt><dd>Bangkok · Pattaya · Coral Island</dd></div>
+              <div class="wide"><dt>Next departures</dt><dd>10 Nov · 24 Nov</dd></div>
+            </dl>
+            <span class="chapter__cta">View trip <i aria-hidden="true">→</i></span>
+          </a>
+        </article>
+
+        <div class="trips__outro">
+          <p class="trips__outro-big">40+ destinations.<br><em>One seat is all it takes.</em></p>
+          <a class="btn btn--sky" href="https://www.roamers.in/trips" data-magnetic data-transition="All trips"><span>All upcoming trips</span><i class="btn__arrow" aria-hidden="true">→</i></a>
+        </div>
+      </div>
+      <div class="trips__progress" aria-hidden="true"><span></span></div>
+    </div>
+  </section>
+
+  <!-- 05 UPCOMING DEPARTURES — the booking board -->
+  <section class="deps" id="departures" data-chapter="03" data-chapter-name="Explore" aria-labelledby="deps-title">
+    <div class="wrap">
+      <div class="deps__head">
+        <p class="eyebrow mono">(04) Upcoming departures</p>
+        <h2 class="h-display" id="deps-title">Pick a date.<br>We do <em>the rest.</em></h2>
+        <p class="deps__lede">Live seats on the next departures. Every one is solo-friendly and sorted end to end — transport, stays, meals, permits and a trip captain. Filter by month, then book the one that fits your calendar.</p>
+      </div>
+
+      <div class="deps__bar">
+        <div class="deps__filters mono" role="group" aria-label="Filter departures by month">
+          <button class="fchip is-on" type="button" data-filter="all" aria-pressed="true">All<span class="fchip__n">10</span></button>
+          <button class="fchip" type="button" data-filter="sep" aria-pressed="false">Sep<span class="fchip__n">3</span></button>
+          <button class="fchip" type="button" data-filter="oct" aria-pressed="false">Oct<span class="fchip__n">4</span></button>
+          <button class="fchip" type="button" data-filter="nov" aria-pressed="false">Nov<span class="fchip__n">2</span></button>
+          <button class="fchip" type="button" data-filter="dec" aria-pressed="false">Dec<span class="fchip__n">2</span></button>
+        </div>
+        <p class="deps__count mono" aria-live="polite"><span data-dep-count>10</span> departures · 40+ more online</p>
+      </div>
+
+      <div class="deps__grid">
+
+        <article class="dep" data-months="sep" data-cursor="Reserve">
+          <a class="dep__link" href="https://www.roamers.in/ladakh-circuit" data-transition="Ladakh">
+            <span class="dep__rule" aria-hidden="true"></span>
+            <div class="dep__media">
+              <img src="assets/img/ch-ladakh-900.webp" width="900" height="439" alt="A rider on a motorbike kicking up dust on a Ladakh road" loading="lazy">
+              <p class="dep__chips mono"><span>8D / 7N</span><span>Ex Leh</span></p>
+              <p class="dep__idx mono" aria-hidden="true">Dep 01</p>
+            </div>
+            <div class="dep__body">
+              <h3 class="dep__name">Leh Ladakh<br>Grand Circuit</h3>
+              <p class="dep__route mono">Leh · Khardung La · Nubra · Pangong</p>
+              <p class="dep__dates mono"><span>19 Sep</span><span>26 Sep</span></p>
+              <p class="dep__seats mono"><span class="dep__meter" style="--filled: .67" aria-hidden="true"><i></i></span>6 of 18 seats left</p>
+              <p class="dep__foot"><span class="dep__price"><span class="mono">from</span><strong>₹24,990</strong></span><span class="dep__cta mono">Reserve <i aria-hidden="true">→</i></span></p>
+            </div>
+          </a>
+        </article>
+
+        <article class="dep" data-months="sep oct" data-cursor="Reserve">
+          <a class="dep__link" href="https://www.roamers.in/spiti-chandratal" data-transition="Spiti">
+            <span class="dep__rule" aria-hidden="true"></span>
+            <div class="dep__media">
+              <img src="assets/img/ch-spiti-960.webp" width="960" height="640" alt="Key Monastery on its hilltop in Spiti, lit by late sun" loading="lazy">
+              <p class="dep__chips mono"><span>7D / 6N</span><span>Ex Delhi</span></p>
+              <p class="dep__idx mono" aria-hidden="true">Dep 02</p>
+            </div>
+            <div class="dep__body">
+              <h3 class="dep__name">Spiti with<br>Chandratal</h3>
+              <p class="dep__route mono">Kalpa · Kaza · Chandratal</p>
+              <p class="dep__dates mono"><span>19 Sep</span><span>03 Oct</span></p>
+              <p class="dep__seats mono"><span class="dep__meter" style="--filled: .75" aria-hidden="true"><i></i></span>4 of 16 seats left</p>
+              <p class="dep__foot"><span class="dep__price"><span class="mono">from</span><strong>₹22,990</strong></span><span class="dep__cta mono">Reserve <i aria-hidden="true">→</i></span></p>
+            </div>
+          </a>
+        </article>
+
+        <article class="dep" data-months="sep" data-cursor="Reserve">
+          <a class="dep__link" href="https://www.roamers.in/trips" data-transition="Valley of Flowers">
+            <span class="dep__rule" aria-hidden="true"></span>
+            <div class="dep__media">
+              <img src="assets/img/day3-800.webp" width="800" height="1000" alt="A Roamers group trekking through the Valley of Flowers" loading="lazy">
+              <p class="dep__chips mono"><span>6D / 5N</span><span>Ex Rishikesh</span></p>
+              <p class="dep__idx mono" aria-hidden="true">Dep 03</p>
+            </div>
+            <div class="dep__body">
+              <h3 class="dep__name">Valley of<br>Flowers Trek</h3>
+              <p class="dep__route mono">Joshimath · Ghangaria · Hemkund</p>
+              <p class="dep__dates mono"><span>26 Sep</span></p>
+              <p class="dep__seats mono"><span class="dep__meter" style="--filled: .8" aria-hidden="true"><i></i></span>3 of 15 seats left</p>
+              <p class="dep__foot"><span class="dep__price"><span class="mono">from</span><strong>₹9,990</strong></span><span class="dep__cta mono">Reserve <i aria-hidden="true">→</i></span></p>
+            </div>
+          </a>
+        </article>
+
+        <article class="dep" data-months="oct" data-cursor="Reserve">
+          <a class="dep__link" href="https://www.roamers.in/meghalaya" data-transition="Meghalaya">
+            <span class="dep__rule" aria-hidden="true"></span>
+            <div class="dep__media">
+              <img src="assets/img/ch-meghalaya-960.webp" width="960" height="720" alt="The glass-clear Umngot river in Meghalaya" loading="lazy">
+              <p class="dep__chips mono"><span>6D / 5N</span><span>Ex Guwahati</span></p>
+              <p class="dep__idx mono" aria-hidden="true">Dep 04</p>
+            </div>
+            <div class="dep__body">
+              <h3 class="dep__name">Meghalaya<br>Full Circuit</h3>
+              <p class="dep__route mono">Shillong · Cherrapunjee · Dawki</p>
+              <p class="dep__dates mono"><span>03 Oct</span><span>10 Oct</span><span>17 Oct</span></p>
+              <p class="dep__seats mono"><span class="dep__meter" style="--filled: .45" aria-hidden="true"><i></i></span>11 of 20 seats left</p>
+              <p class="dep__foot"><span class="dep__price"><span class="mono">from</span><strong>₹18,990</strong></span><span class="dep__cta mono">Reserve <i aria-hidden="true">→</i></span></p>
+            </div>
+          </a>
+        </article>
+
+        <article class="dep" data-months="oct" data-cursor="Reserve">
+          <a class="dep__link" href="https://www.roamers.in/kerala-grand-circuit" data-transition="Kerala">
+            <span class="dep__rule" aria-hidden="true"></span>
+            <div class="dep__media">
+              <img src="assets/img/ch-kerala-900.webp" width="900" height="600" alt="Mist rolling over the tea hills of Munnar" loading="lazy">
+              <p class="dep__chips mono"><span>7D / 6N</span><span>Ex Kochi</span></p>
+              <p class="dep__idx mono" aria-hidden="true">Dep 05</p>
+            </div>
+            <div class="dep__body">
+              <h3 class="dep__name">Kerala<br>Grand Circuit</h3>
+              <p class="dep__route mono">Munnar · Vagamon · Varkala · Alleppey</p>
+              <p class="dep__dates mono"><span>17 Oct</span><span>24 Oct</span></p>
+              <p class="dep__seats mono"><span class="dep__meter" style="--filled: .55" aria-hidden="true"><i></i></span>9 of 20 seats left</p>
+              <p class="dep__foot"><span class="dep__price"><span class="mono">from</span><strong>₹16,990</strong></span><span class="dep__cta mono">Reserve <i aria-hidden="true">→</i></span></p>
+            </div>
+          </a>
+        </article>
+
+        <article class="dep" data-months="oct" data-cursor="Reserve">
+          <a class="dep__link" href="https://www.roamers.in/srilanka" data-transition="Sri Lanka">
+            <span class="dep__rule" aria-hidden="true"></span>
+            <div class="dep__media">
+              <img src="assets/img/ch-srilanka-960.webp" width="960" height="600" alt="A blue train crossing the Nine Arch Bridge near Ella" loading="lazy">
+              <p class="dep__chips mono"><span>7D / 6N</span><span>Ex Colombo</span></p>
+              <p class="dep__idx mono" aria-hidden="true">Dep 06</p>
+            </div>
+            <div class="dep__body">
+              <h3 class="dep__name">Sri Lanka<br>Island Loop</h3>
+              <p class="dep__route mono">Sigiriya · Kandy · Ella · Galle</p>
+              <p class="dep__dates mono"><span>10 Oct</span><span>24 Oct</span></p>
+              <p class="dep__seats mono"><span class="dep__meter" style="--filled: .5" aria-hidden="true"><i></i></span>8 of 16 seats left</p>
+              <p class="dep__foot"><span class="dep__price"><span class="mono">from</span><strong>₹43,990</strong></span><span class="dep__cta mono">Reserve <i aria-hidden="true">→</i></span></p>
+            </div>
+          </a>
+        </article>
+
+        <article class="dep" data-months="nov" data-cursor="Reserve">
+          <a class="dep__link" href="https://www.roamers.in/trips" data-transition="Thailand">
+            <span class="dep__rule" aria-hidden="true"></span>
+            <div class="dep__media">
+              <img src="assets/img/ch-thailand-960.webp" width="960" height="664" alt="Longtail boats moored below limestone cliffs in Thailand" loading="lazy">
+              <p class="dep__chips mono"><span>6D / 5N</span><span>Ex Bangkok</span></p>
+              <p class="dep__idx mono" aria-hidden="true">Dep 07</p>
+            </div>
+            <div class="dep__body">
+              <h3 class="dep__name">Thailand<br>Island Hop</h3>
+              <p class="dep__route mono">Bangkok · Pattaya · Coral Island</p>
+              <p class="dep__dates mono"><span>10 Nov</span><span>24 Nov</span></p>
+              <p class="dep__seats mono"><span class="dep__meter" style="--filled: .61" aria-hidden="true"><i></i></span>7 of 18 seats left</p>
+              <p class="dep__foot"><span class="dep__price"><span class="mono">from</span><strong>₹37,500</strong></span><span class="dep__cta mono">Reserve <i aria-hidden="true">→</i></span></p>
+            </div>
+          </a>
+        </article>
+
+        <article class="dep" data-months="nov" data-cursor="Reserve">
+          <a class="dep__link" href="https://www.roamers.in/trips" data-transition="Andaman">
+            <span class="dep__rule" aria-hidden="true"></span>
+            <div class="dep__media">
+              <img src="assets/img/pp-selfie-900.webp" width="900" height="900" alt="A Roamers group on the water in Port Blair, Andaman" loading="lazy">
+              <p class="dep__chips mono"><span>6D / 5N</span><span>Ex Port Blair</span></p>
+              <p class="dep__idx mono" aria-hidden="true">Dep 08</p>
+            </div>
+            <div class="dep__body">
+              <h3 class="dep__name">Andaman<br>Island Hopping</h3>
+              <p class="dep__route mono">Havelock · Neil · Radhanagar</p>
+              <p class="dep__dates mono"><span>14 Nov</span><span>28 Nov</span></p>
+              <p class="dep__seats mono"><span class="dep__meter" style="--filled: .58" aria-hidden="true"><i></i></span>8 of 19 seats left</p>
+              <p class="dep__foot"><span class="dep__price"><span class="mono">from</span><strong>₹37,500</strong></span><span class="dep__cta mono">Reserve <i aria-hidden="true">→</i></span></p>
+            </div>
+          </a>
+        </article>
+
+        <article class="dep" data-months="dec" data-cursor="Reserve">
+          <a class="dep__link" href="https://www.roamers.in/kedarkantha" data-transition="Kedarkantha">
+            <span class="dep__rule" aria-hidden="true"></span>
+            <div class="dep__media">
+              <img src="assets/img/cat-treks-900.webp" width="900" height="530" alt="Trekkers crossing a snow field below a ridge" loading="lazy">
+              <p class="dep__chips mono"><span>6D / 5N</span><span>Ex Dehradun</span></p>
+              <p class="dep__idx mono" aria-hidden="true">Dep 09</p>
+            </div>
+            <div class="dep__body">
+              <h3 class="dep__name">Kedarkantha<br>Snow Trek</h3>
+              <p class="dep__route mono">Sankri · Juda Ka Talab · Summit</p>
+              <p class="dep__dates mono"><span>12 Dec</span><span>26 Dec</span></p>
+              <p class="dep__seats mono"><span class="dep__meter" style="--filled: .36" aria-hidden="true"><i></i></span>14 of 22 seats left</p>
+              <p class="dep__foot"><span class="dep__price"><span class="mono">from</span><strong>₹11,990</strong></span><span class="dep__cta mono">Reserve <i aria-hidden="true">→</i></span></p>
+            </div>
+          </a>
+        </article>
+
+        <article class="dep" data-months="dec" data-cursor="Reserve">
+          <a class="dep__link" href="https://www.roamers.in/shortbreak-trips" data-transition="Kolukkumalai">
+            <span class="dep__rule" aria-hidden="true"></span>
+            <div class="dep__media">
+              <img src="assets/img/cat-short-900.webp" width="900" height="720" alt="Mist over the tea slopes above Ooty" loading="lazy">
+              <p class="dep__chips mono"><span>3D / 2N</span><span>Ex Chennai</span></p>
+              <p class="dep__idx mono" aria-hidden="true">Dep 10</p>
+            </div>
+            <div class="dep__body">
+              <h3 class="dep__name">Ooty &amp;<br>Kolukkumalai Camp</h3>
+              <p class="dep__route mono">Ooty · Coonoor · Kolukkumalai</p>
+              <p class="dep__dates mono"><span>12 Dec</span><span>26 Dec</span></p>
+              <p class="dep__seats mono"><span class="dep__meter" style="--filled: .7" aria-hidden="true"><i></i></span>6 of 20 seats left</p>
+              <p class="dep__foot"><span class="dep__price"><span class="mono">from</span><strong>₹7,299</strong></span><span class="dep__cta mono">Reserve <i aria-hidden="true">→</i></span></p>
+            </div>
+          </a>
+        </article>
+
+        <p class="deps__empty mono" hidden>No departures that month yet — try another, or ask us to open a private date.</p>
+      </div>
+
+      <div class="deps__foot">
+        <a class="btn btn--sky" href="https://www.roamers.in/trips" data-magnetic data-transition="All trips"><span>See all upcoming trips</span><i class="btn__arrow" aria-hidden="true">→</i></a>
+        <p class="deps__note mono">New dates open every week · Travelling as 4+? We’ll open a private departure — <a class="link" href="https://wa.me/918122121066">ask on WhatsApp</a></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 06 TRAVEL CATEGORIES — a contents page -->
+  <section class="ways" id="ways" data-chapter="03" data-chapter-name="Explore" aria-labelledby="ways-title">
+    <div class="wrap">
+      <div class="ways__head">
+        <p class="eyebrow mono">(05) Trip styles</p>
+        <h2 class="h-display" id="ways-title">Five ways<br>to <em>roam.</em></h2>
+        <p class="ways__lede">Read it like a contents page. Pick the pace that sounds like you.</p>
+      </div>
+      <ul class="ways__list">
+        <li class="way"><a href="https://www.roamers.in/backpacking-trips" data-img="assets/img/cat-backpacking-900.webp">
+          <span class="way__n mono">01</span><span class="way__name">Backpacking</span><span class="way__desc">For the long way round.</span><span class="way__where mono">Kerala · Kodaikanal · Chikmagalur · Thailand</span>
+          <img class="way__thumb" src="assets/img/cat-backpacking-900.webp" width="900" height="687" alt="" loading="lazy"><i class="way__arrow" aria-hidden="true">→</i></a></li>
+        <li class="way"><a href="https://www.roamers.in/shortbreak-trips" data-img="assets/img/cat-short-900.webp">
+          <span class="way__n mono">02</span><span class="way__name">Short Breaks</span><span class="way__desc">Friday night out, Sunday night home.</span><span class="way__where mono">Ooty · Kodaikanal · Pondicherry · Kolukkumalai</span>
+          <img class="way__thumb" src="assets/img/cat-short-900.webp" width="900" height="720" alt="" loading="lazy"><i class="way__arrow" aria-hidden="true">→</i></a></li>
+        <li class="way"><a href="https://www.roamers.in/trips" data-img="assets/img/cat-treks-900.webp">
+          <span class="way__n mono">03</span><span class="way__name">Treks &amp; Camps</span><span class="way__desc">Summits, snow and a very large sky.</span><span class="way__where mono">Kedarkantha · Valley of Flowers · Kolukkumalai</span>
+          <img class="way__thumb" src="assets/img/cat-treks-900.webp" width="900" height="530" alt="" loading="lazy"><i class="way__arrow" aria-hidden="true">→</i></a></li>
+        <li class="way"><a href="https://www.roamers.in/trips" data-img="assets/img/cat-intl-900.webp">
+          <span class="way__n mono">04</span><span class="way__name">International</span><span class="way__desc">Passports out, squad sorted.</span><span class="way__where mono">Sri Lanka · Thailand</span>
+          <img class="way__thumb" src="assets/img/cat-intl-900.webp" width="900" height="1349" alt="" loading="lazy"><i class="way__arrow" aria-hidden="true">→</i></a></li>
+        <li class="way"><a href="https://www.roamers.in/trips" data-img="assets/img/cat-solo-900.webp">
+          <span class="way__n mono">05</span><span class="way__name">Solo-Friendly</span><span class="way__desc">Honestly? All of them. These are extra good for first-timers.</span><span class="way__where mono">Spiti · Meghalaya · Andaman</span>
+          <img class="way__thumb" src="assets/img/cat-solo-900.webp" width="900" height="1200" alt="" loading="lazy"><i class="way__arrow" aria-hidden="true">→</i></a></li>
+      </ul>
+    </div>
+    <div class="ways__float" aria-hidden="true"><img alt=""></div>
+  </section>
+
+  <!-- 07 SEASON COLLECTION — Christmas & New Year -->
+  <section class="season" id="season" data-chapter="03" data-chapter-name="Explore" aria-labelledby="season-title">
+    <div class="wrap season__head">
+      <p class="eyebrow mono">(06) Season collection</p>
+      <div class="season__intro">
+        <h2 class="season__title" id="season-title">Christmas &amp;<br><em>New Year.</em></h2>
+        <div class="season__aside">
+          <p class="season__lede">End the year somewhere that earns the last page of the album. Six departures over the long holiday window — the ones that sell out first, every single year.</p>
+          <p class="season__meta mono"><span>26 Dec — 02 Jan</span><span>6 departures</span><span>Booking open</span></p>
+        </div>
+      </div>
+    </div>
+
+    <div class="rail" data-rail>
+      <div class="rail__track season__track" data-rail-track>
+
+        <article class="scard" data-cursor="View trip">
+          <a class="scard__link" href="https://www.roamers.in/srilanka" data-transition="Sri Lanka">
+            <img class="scard__img" src="assets/img/ch-srilanka-2-800.webp" width="800" height="533" alt="Golden hour on the Galle coast, Sri Lanka" loading="lazy">
+            <span class="scard__scrim" aria-hidden="true"></span>
+            <p class="scard__tag mono">27 Dec — 02 Jan</p>
+            <div class="scard__body">
+              <h3 class="scard__name">Sri Lanka</h3>
+              <p class="scard__line mono">6 nights · Ella, Galle, Bentota</p>
+              <p class="scard__foot"><span class="scard__price"><span class="mono">from</span><strong>₹43,990</strong></span><span class="scard__cta mono">View <i aria-hidden="true">→</i></span></p>
+            </div>
+          </a>
+        </article>
+
+        <article class="scard" data-cursor="View trip">
+          <a class="scard__link" href="https://www.roamers.in/trips" data-transition="Andaman">
+            <img class="scard__img" src="assets/img/pp-selfie-900.webp" width="900" height="900" alt="A Roamers group on the water in Port Blair, Andaman" loading="lazy">
+            <span class="scard__scrim" aria-hidden="true"></span>
+            <p class="scard__tag mono">28 Dec — 02 Jan</p>
+            <div class="scard__body">
+              <h3 class="scard__name">Andaman</h3>
+              <p class="scard__line mono">5 nights · Havelock, Neil</p>
+              <p class="scard__foot"><span class="scard__price"><span class="mono">from</span><strong>₹37,500</strong></span><span class="scard__cta mono">View <i aria-hidden="true">→</i></span></p>
+            </div>
+          </a>
+        </article>
+
+        <article class="scard" data-cursor="View trip">
+          <a class="scard__link" href="https://www.roamers.in/trips" data-transition="Thailand">
+            <img class="scard__img" src="assets/img/ch-thailand-2-800.webp" width="800" height="578" alt="A climber on the limestone cliffs at Railay, Thailand" loading="lazy">
+            <span class="scard__scrim" aria-hidden="true"></span>
+            <p class="scard__tag mono">27 Dec — 01 Jan</p>
+            <div class="scard__body">
+              <h3 class="scard__name">Thailand</h3>
+              <p class="scard__line mono">5 nights · Bangkok, Coral Island</p>
+              <p class="scard__foot"><span class="scard__price"><span class="mono">from</span><strong>₹37,500</strong></span><span class="scard__cta mono">View <i aria-hidden="true">→</i></span></p>
+            </div>
+          </a>
+        </article>
+
+        <article class="scard" data-cursor="View trip">
+          <a class="scard__link" href="https://www.roamers.in/meghalaya" data-transition="Meghalaya">
+            <img class="scard__img" src="assets/img/ch-meghalaya-2-800.webp" width="800" height="600" alt="The Umngot river at Dawki, Meghalaya" loading="lazy">
+            <span class="scard__scrim" aria-hidden="true"></span>
+            <p class="scard__tag mono">26 Dec — 31 Dec</p>
+            <div class="scard__body">
+              <h3 class="scard__name">Meghalaya</h3>
+              <p class="scard__line mono">5 nights · Shillong, Cherrapunjee</p>
+              <p class="scard__foot"><span class="scard__price"><span class="mono">from</span><strong>₹21,990</strong></span><span class="scard__cta mono">View <i aria-hidden="true">→</i></span></p>
+            </div>
+          </a>
+        </article>
+
+        <article class="scard" data-cursor="View trip">
+          <a class="scard__link" href="https://www.roamers.in/kerala-grand-circuit" data-transition="Kerala">
+            <img class="scard__img" src="assets/img/ch-kerala-2-800.webp" width="800" height="450" alt="Palms leaning over the Kerala backwaters" loading="lazy">
+            <span class="scard__scrim" aria-hidden="true"></span>
+            <p class="scard__tag mono">27 Dec — 02 Jan</p>
+            <div class="scard__body">
+              <h3 class="scard__name">Kerala</h3>
+              <p class="scard__line mono">6 nights · Munnar, Alleppey, Varkala</p>
+              <p class="scard__foot"><span class="scard__price"><span class="mono">from</span><strong>₹16,990</strong></span><span class="scard__cta mono">View <i aria-hidden="true">→</i></span></p>
+            </div>
+          </a>
+        </article>
+
+        <article class="scard" data-cursor="View trip">
+          <a class="scard__link" href="https://www.roamers.in/shortbreak-trips" data-transition="Ooty">
+            <img class="scard__img" src="assets/img/cat-short-900.webp" width="900" height="720" alt="Sunrise over the tea slopes above Ooty" loading="lazy">
+            <span class="scard__scrim" aria-hidden="true"></span>
+            <p class="scard__tag mono">30 Dec — 01 Jan</p>
+            <div class="scard__body">
+              <h3 class="scard__name">Ooty</h3>
+              <p class="scard__line mono">2 nights · Coonoor, Kolukkumalai</p>
+              <p class="scard__foot"><span class="scard__price"><span class="mono">from</span><strong>₹9,990</strong></span><span class="scard__cta mono">View <i aria-hidden="true">→</i></span></p>
+            </div>
+          </a>
+        </article>
+
+      </div>
+      <div class="rail__nav">
+        <button class="rail__arrow" type="button" data-rail-prev aria-label="Previous trips"><i aria-hidden="true">←</i></button>
+        <button class="rail__arrow" type="button" data-rail-next aria-label="More trips"><i aria-hidden="true">→</i></button>
+      </div>
+    </div>
+
+    <div class="wrap season__foot">
+      <a class="btn" href="https://www.roamers.in/trips" data-magnetic data-transition="Season trips"><span>View the whole collection</span><i class="btn__arrow" aria-hidden="true">→</i></a>
+      <p class="season__note mono">Last year every New Year departure was full by 12 November.</p>
+    </div>
+  </section>
+
+  <!-- 08 THE PEOPLE -->
+  <section class="people" id="people" data-chapter="04" data-chapter-name="Connect" aria-labelledby="people-title">
+    <div class="people__stage">
+      <h2 class="people__title" id="people-title">
+        <span class="people__t1">Strangers today.</span>
+        <span class="people__t2">Travel buddies tomorrow.</span>
+      </h2>
+      <div class="people__cloud">
+        <figure class="pp pp--l"><img src="assets/img/pp-selfie-900.webp" width="900" height="900" alt="A Roamers group selfie in Port Blair" loading="lazy"><figcaption class="mono">Port Blair</figcaption></figure>
+        <figure class="pp pp--m"><img src="assets/img/pp-meal-900.webp" width="900" height="600" alt="Friends sharing a long dinner table" loading="lazy"></figure>
+        <figure class="pp pp--s"><img src="assets/img/pp-bikers-640.webp" width="640" height="480" alt="Riders on a Ladakh highway" loading="lazy"><figcaption class="mono">Ladakh</figcaption></figure>
+        <figure class="pp pp--m pp--tall"><img src="assets/img/pp-street-900.webp" width="900" height="1350" alt="Three friends laughing on a street" loading="lazy"></figure>
+        <figure class="pp pp--l"><img src="assets/img/pp-rockwall-900.webp" width="900" height="1125" alt="A Roamers trek group posing after the Valley of Flowers trail" loading="lazy"><figcaption class="mono">Valley of Flowers</figcaption></figure>
+        <figure class="pp pp--s"><img src="assets/img/pp-guitar-900.webp" width="900" height="600" alt="Hands playing a guitar" loading="lazy"></figure>
+        <figure class="pp pp--m"><img src="assets/img/pp-ridge-900.webp" width="900" height="675" alt="Trekkers crossing a snowy ridge" loading="lazy"><figcaption class="mono">Kedarkantha</figcaption></figure>
+        <figure class="pp pp--m pp--tall"><img src="assets/img/pp-van-900.webp" width="900" height="1349" alt="A camper van with a lit rooftop tent at night" loading="lazy"></figure>
+        <figure class="pp pp--s"><img src="assets/img/pp-kayak-669.webp" width="669" height="446" alt="Kayaking through mangroves" loading="lazy"><figcaption class="mono">Kerala</figcaption></figure>
+        <figure class="pp pp--m"><img src="assets/img/pp-backpackers-900.webp" width="900" height="600" alt="Backpackers laughing on a mountain trail" loading="lazy"></figure>
+        <figure class="pp pp--s"><img src="assets/img/pp-tents-820.webp" width="820" height="600" alt="Tents pitched on snow at sunset" loading="lazy"><figcaption class="mono">Camp, 3,400 m</figcaption></figure>
+        <figure class="pp pp--m"><img src="assets/img/pp-sunset-900.webp" width="900" height="599" alt="Friends watching the sun set over a lake" loading="lazy"></figure>
+      </div>
+      <p class="people__note">Nobody here arrived knowing everyone. <a class="link link--light" href="#stories">Read their stories</a></p>
+    </div>
+  </section>
+
+  <!-- 09 COMMUNITY -->
+  <section class="community" id="community" data-chapter="04" data-chapter-name="Connect" aria-labelledby="community-title">
+    <div class="wrap community__grid">
+      <div class="community__head">
+        <p class="eyebrow mono">(07) Community</p>
+        <h2 class="community__title" id="community-title">The adventure doesn’t start when you board the bus. <em>It starts when you meet your people.</em></h2>
+        <p class="community__lede">Roamers runs all year, not just on the road. Meetups in Chennai and Coimbatore — coffee, games, workshops, film nights — so the first hello happens long before the first hairpin bend.</p>
+        <div class="community__ctas">
+          <a class="btn" href="https://www.instagram.com/roamers.in/" data-magnetic><span>Join the community</span><i class="btn__arrow" aria-hidden="true">→</i></a>
+          <a class="link" href="https://wa.me/918122121066">Say hi on WhatsApp</a>
+        </div>
+      </div>
+      <div class="community__media">
+        <figure class="cm cm--a"><img src="assets/img/com-cafe-1400.webp" srcset="assets/img/com-cafe-800.webp 800w, assets/img/com-cafe-1400.webp 1400w" sizes="(min-width: 900px) 40vw, 90vw" width="1400" height="934" alt="Four friends laughing over coffee" loading="lazy"></figure>
+        <figure class="cm cm--b"><img src="assets/img/com-meetup-900.webp" width="900" height="600" alt="A meetup in a busy café" loading="lazy"></figure>
+        <p class="cm__tag mono">Coffee &amp; Conversations, Chennai</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 10 MEETUPS — the calendar, as cards -->
+  <section class="meets" id="meetups" data-chapter="04" data-chapter-name="Connect" aria-labelledby="meets-title">
+    <div class="wrap meets__head">
+      <p class="eyebrow mono">(08) Meetups</p>
+      <h2 class="h-display" id="meets-title">The squad meets<br>before <em>the bus.</em></h2>
+      <p class="meets__lede">Coffee, games, clay, film nights — small rooms in Chennai and Coimbatore where the first hello happens. Free or near-free, always open to first-timers.</p>
+    </div>
+
+    <div class="rail" data-rail>
+      <div class="rail__track meets__track" data-rail-track>
+
+        <article class="meet is-open" data-cursor="Register">
+          <a class="meet__link" href="https://www.roamers.in/events/c&amp;c" data-transition="Coffee &amp; Conversations">
+            <div class="meet__media">
+              <img src="assets/img/com-cafe-800.webp" width="800" height="534" alt="Four friends laughing over coffee" loading="lazy">
+              <p class="meet__slots mono">15 seats</p>
+            </div>
+            <div class="meet__body">
+              <p class="meet__when mono"><span class="meet__d">26</span><span>Sep<br>Sat</span></p>
+              <h3 class="meet__name">Coffee &amp; Conversations</h3>
+              <p class="meet__line">Sip, chat, swap stories — and meet the people you’ll travel with next.</p>
+              <p class="meet__foot"><span class="meet__where mono">Chennai · 5 PM</span><span class="meet__cta mono">Register <i aria-hidden="true">→</i></span></p>
+            </div>
+          </a>
+        </article>
+
+        <article class="meet" data-cursor="Get notified">
+          <a class="meet__link" href="https://wa.me/918122121066" data-transition="Strangers Fun Meetup">
+            <div class="meet__media">
+              <img src="assets/img/com-meetup-900.webp" width="900" height="600" alt="A busy meetup in a café" loading="lazy">
+              <p class="meet__slots mono">Opening soon</p>
+            </div>
+            <div class="meet__body">
+              <p class="meet__when mono"><span class="meet__d">10</span><span>Oct<br>Sat</span></p>
+              <h3 class="meet__name">Strangers Fun Meetup</h3>
+              <p class="meet__line">Games, icebreakers, laughs — and, reliably, a few future travel buddies.</p>
+              <p class="meet__foot"><span class="meet__where mono">Chennai · 6 PM</span><span class="meet__cta mono">Notify me <i aria-hidden="true">→</i></span></p>
+            </div>
+          </a>
+        </article>
+
+        <article class="meet is-open" data-cursor="Register">
+          <a class="meet__link" href="https://wa.me/918122121066" data-transition="Potluck &amp; Board Games">
+            <div class="meet__media">
+              <img src="assets/img/pp-meal-900.webp" width="900" height="600" alt="Friends sharing a long dinner table" loading="lazy">
+              <p class="meet__slots mono">12 seats</p>
+            </div>
+            <div class="meet__body">
+              <p class="meet__when mono"><span class="meet__d">19</span><span>Oct<br>Sun</span></p>
+              <h3 class="meet__name">Potluck &amp; Board Games</h3>
+              <p class="meet__line">Bring one dish. Leave with a group chat and a very strong Catan opinion.</p>
+              <p class="meet__foot"><span class="meet__where mono">Chennai · 12 PM</span><span class="meet__cta mono">Register <i aria-hidden="true">→</i></span></p>
+            </div>
+          </a>
+        </article>
+
+        <article class="meet" data-cursor="Get notified">
+          <a class="meet__link" href="https://wa.me/918122121066" data-transition="Music &amp; Jam Night">
+            <div class="meet__media">
+              <img src="assets/img/pp-guitar-900.webp" width="900" height="600" alt="Hands playing a guitar" loading="lazy">
+              <p class="meet__slots mono">Opening soon</p>
+            </div>
+            <div class="meet__body">
+              <p class="meet__when mono"><span class="meet__d">23</span><span>Oct<br>Fri</span></p>
+              <h3 class="meet__name">Music &amp; Jam Night</h3>
+              <p class="meet__line">Someone always brings a guitar. This time it’s the whole point.</p>
+              <p class="meet__foot"><span class="meet__where mono">Coimbatore · 7 PM</span><span class="meet__cta mono">Notify me <i aria-hidden="true">→</i></span></p>
+            </div>
+          </a>
+        </article>
+
+        <article class="meet" data-cursor="Get notified">
+          <a class="meet__link" href="https://wa.me/918122121066" data-transition="Mystery Movie Night">
+            <div class="meet__media">
+              <img src="assets/img/com-hall-900.webp" width="900" height="600" alt="A screening room filling up before a film" loading="lazy">
+              <p class="meet__slots mono">Opening soon</p>
+            </div>
+            <div class="meet__body">
+              <p class="meet__when mono"><span class="meet__d">07</span><span>Nov<br>Fri</span></p>
+              <h3 class="meet__name">Mystery Movie Night</h3>
+              <p class="meet__line">A surprise film, too much popcorn, and a proper argument afterwards.</p>
+              <p class="meet__foot"><span class="meet__where mono">Coimbatore · 7 PM</span><span class="meet__cta mono">Notify me <i aria-hidden="true">→</i></span></p>
+            </div>
+          </a>
+        </article>
+
+      </div>
+      <div class="rail__nav">
+        <button class="rail__arrow" type="button" data-rail-prev aria-label="Previous meetups"><i aria-hidden="true">←</i></button>
+        <button class="rail__arrow" type="button" data-rail-next aria-label="More meetups"><i aria-hidden="true">→</i></button>
+      </div>
+    </div>
+
+    <div class="wrap meets__foot">
+      <a class="btn" href="https://www.instagram.com/roamers.in/" data-magnetic><span>Follow for new meetups</span><i class="btn__arrow" aria-hidden="true">→</i></a>
+      <p class="meets__note mono">Chennai &amp; Coimbatore now · Bengaluru and Hyderabad next</p>
+    </div>
+  </section>
+
+  <!-- 11 TESTIMONIALS — postcards that stack -->
+  <section class="stories" id="stories" data-chapter="04" data-chapter-name="Connect" aria-labelledby="stories-title">
+    <div class="wrap stories__head">
+      <p class="eyebrow mono">(09) Stories</p>
+      <h2 class="h-display" id="stories-title">Came alone.<br>Left with <em>stories.</em></h2>
+    </div>
+    <div class="stories__stack">
+      <article class="story">
+        <div class="story__card">
+          <div class="story__media"><img src="assets/img/story-naisha-1440.webp" srcset="assets/img/story-naisha-800.webp 800w, assets/img/story-naisha-1440.webp 1440w" sizes="(min-width: 900px) 60vw, 100vw" width="1440" height="1800" alt="Two trekkers throwing their arms up beside a glacial lake" loading="lazy"></div>
+          <div class="story__body">
+            <p class="story__tag mono"><span>Story 01 / 04</span><span class="story__solo">Joined solo</span></p>
+            <blockquote class="story__quote"><p>“I joined solo — my first group trip ever — and it knocked my expectations flat. Very cool people, awesome spots. Gonna miss you all, fam.”</p></blockquote>
+            <p class="story__who"><strong>Naisha</strong><span class="mono">Valley of Flowers Trek · Uttarakhand</span></p>
+          </div>
+        </div>
+      </article>
+      <article class="story">
+        <div class="story__card">
+          <div class="story__media"><img src="assets/img/story-vinayak-735.webp" width="735" height="1103" alt="Young monks laughing as they run with a red robe billowing behind them" loading="lazy"></div>
+          <div class="story__body">
+            <p class="story__tag mono"><span>Story 02 / 04</span><span class="story__solo">Joined solo</span></p>
+            <blockquote class="story__quote"><p>“The vibe was unreal. I didn’t expect to connect like this. The places, the local food, the cultures — and those kids! See you all at the reunion.”</p></blockquote>
+            <p class="story__who"><strong>Vinayak</strong><span class="mono">Leh Ladakh Grand Circuit</span></p>
+          </div>
+        </div>
+      </article>
+      <article class="story">
+        <div class="story__card">
+          <div class="story__media"><img src="assets/img/story-aadhya-1360.webp" srcset="assets/img/story-aadhya-800.webp 800w, assets/img/story-aadhya-1360.webp 1360w" sizes="(min-width: 900px) 60vw, 100vw" width="1360" height="765" alt="A campfire glowing at dusk on a grassy hilltop camp" loading="lazy"></div>
+          <div class="story__body">
+            <p class="story__tag mono"><span>Story 03 / 04</span><span class="story__solo">Joined solo</span></p>
+            <blockquote class="story__quote"><p>“Camp nights with a bunch of crazy travellers. This is the trip I’m going to remember for a long, long time.”</p></blockquote>
+            <p class="story__who"><strong>Aadhya</strong><span class="mono">Kolukkumalai Camp · Munnar</span></p>
+          </div>
+        </div>
+      </article>
+      <article class="story">
+        <div class="story__card">
+          <div class="story__media"><img src="assets/img/story-shreya-1500.webp" srcset="assets/img/story-shreya-800.webp 800w, assets/img/story-shreya-1500.webp 1500w" sizes="(min-width: 900px) 60vw, 100vw" width="1500" height="1031" alt="A traveller walking along a turquoise Andaman shoreline" loading="lazy"></div>
+          <div class="story__body">
+            <p class="story__tag mono"><span>Story 04 / 04</span><span class="story__solo">Came with her sister</span></p>
+            <blockquote class="story__quote"><p>“The best experience we could have asked for. We even explored spots that weren’t on the itinerary. No idea where the days went.”</p></blockquote>
+            <p class="story__who"><strong>Shreya</strong><span class="mono">Andaman Island Hopping</span></p>
+          </div>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- 12 TRUST — a data poem -->
+  <section class="proof" id="proof" data-chapter="05" data-chapter-name="Join" aria-labelledby="proof-title">
+    <div class="wrap">
+      <p class="eyebrow mono" id="proof-title">(10) The fine print, in very large print</p>
+      <p class="proof__poem">
+        <span class="pw">In</span> <span class="num" data-to="5" data-suffix="+">5+</span> <span class="pw">years,</span>
+        <span class="num num--accent" data-to="10" data-suffix="K+">10K+</span> <span class="pw"><em>travellers</em> have taken</span>
+        <span class="num" data-to="500" data-suffix="+">500+</span> <span class="pw">trips to</span>
+        <span class="num" data-to="40" data-suffix="+">40+</span> <span class="pw"><em>destinations</em> — and rated the whole thing</span>
+        <span class="num num--accent" data-to="4.9" data-decimals="1" data-suffix="★">4.9★</span>
+      </p>
+      <div class="proof__base">
+        <ul class="proof__list">
+          <li><span class="mono">Included</span>Transport, stays, meals on the itinerary, permits.</li>
+          <li><span class="mono">On the ground</span>A trip captain on every departure, local guides where it matters.</li>
+          <li><span class="mono">Before you go</span>A group chat, a packing list and a human you can call.</li>
+        </ul>
+        <div class="expert">
+          <p class="expert__title">Not sure which trip is your trip?</p>
+          <p class="expert__text">Talk to a travel expert — no pressure, no spam, just honest advice.</p>
+          <div class="expert__ctas">
+            <a class="btn" href="tel:+918122121066" data-magnetic><span>Call +91 81221 21066</span></a>
+            <a class="link" href="https://wa.me/918122121066">Request a call back on WhatsApp</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 13 FINALE — roll credits -->
+  <section class="finale" data-chapter="05" data-chapter-name="Join" aria-labelledby="finale-title">
+    <div class="finale__stage">
+      <div class="finale__media"><img src="assets/img/final-camp-1600.webp" srcset="assets/img/final-camp-900.webp 900w, assets/img/final-camp-1600.webp 1600w" sizes="100vw" width="1600" height="1066" alt="Tents glowing under a full moon at a snowy Kedarkantha campsite" loading="lazy"><div class="grain"></div></div>
+      <div class="finale__credits mono" aria-hidden="true">
+        <p><span>Starring</span><strong>You</strong></p>
+        <p><span>With</span><strong>A bus full of strangers</strong></p>
+        <p><span>On location in</span><strong>Ladakh, Spiti, Meghalaya, Kerala, Sri Lanka, Thailand &amp; 34 more</strong></p>
+        <p><span>Catering by</span><strong>Every chai stop on the way</strong></p>
+        <p><span>Directed by</span><strong>Roamers</strong></p>
+      </div>
+      <div class="finale__end">
+        <h2 class="finale__title" id="finale-title"><span>Your next adventure</span> <span>is waiting.</span></h2>
+        <p class="finale__sub">And your next travel squad might be too.</p>
+        <div class="finale__ctas">
+          <a class="btn btn--sky btn--xl" href="https://www.roamers.in/trips" data-magnetic data-transition="Upcoming trips"><span>Explore upcoming trips</span><i class="btn__arrow" aria-hidden="true">→</i></a>
+          <a class="link link--light" href="tel:+918122121066">or talk to a travel expert</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="wrap footer__brand">
+    <img src="assets/brand/roamers-pin-lg.png" width="473" height="640" alt="Roamers" loading="lazy">
+    <p>Travel solo.<br><em>Leave with a squad.</em></p>
+  </div>
+  <div class="wrap footer__grid">
+    <div class="footer__col"><h4 class="mono">Trips</h4><a href="#departures">Upcoming departures</a><a href="https://www.roamers.in/trips">All trips</a><a href="https://www.roamers.in/backpacking-trips">Backpacking</a><a href="https://www.roamers.in/shortbreak-trips">Short breaks</a><a href="https://www.roamers.in/kedarkantha">Treks &amp; camps</a><a href="https://www.roamers.in/srilanka">International</a></div>
+    <div class="footer__col"><h4 class="mono">Community</h4><a href="#meetups">Meetups</a><a href="https://www.instagram.com/roamers.in/">Instagram</a><a href="https://wa.me/918122121066">WhatsApp</a></div>
+    <div class="footer__col"><h4 class="mono">Roamers</h4><a href="#proof">About</a><a href="mailto:info@roamers.in">Contact</a><a href="https://www.roamers.in/cancellation-policy">Cancellation policy</a></div>
+    <div class="footer__col"><h4 class="mono">Say hi</h4><a href="tel:+918122121066">+91 81221 21066</a><a href="mailto:info@roamers.in">info@roamers.in</a><p>Chennai, India</p></div>
+  </div>
+  <p class="footer__mark" aria-hidden="true">Roamers</p>
+  <div class="wrap footer__base mono">
+    <span>© 2026 Roamers. Travel solo. Leave with a squad.</span>
+    <span>Photography: Roamers trips, Unsplash, and Wikimedia Commons — Prasad Gaude &amp; ANKAN (CC BY-SA 4.0), A.Savin (Free Art License).</span>
+  </div>
+</footer>
+
+<a class="mbar" href="#departures"><span>Book a seat</span><i aria-hidden="true">→</i></a>
+
+<script src="assets/vendor/gsap.min.js" defer></script>
+<script src="assets/vendor/ScrollTrigger.min.js" defer></script>
+<script src="assets/vendor/lenis.min.js" defer></script>
+<script src="assets/js/main.js" defer></script>
+<script src="assets/js/story.js" defer></script>
+</body>
+</html>
