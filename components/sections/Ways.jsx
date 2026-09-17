@@ -1,29 +1,36 @@
-/* 06 Travel categories — a contents page */
-export default function Ways() {
+/* 06 Trip categories — a contents page; destinations as roamers.in lists them */
+import { ORIGIN, titleCase } from '@/lib/roamers';
+import { PHOTOS } from '@/lib/images';
+
+export default function Ways({ trips, events }) {
+  const treks = trips.filter(t => /trek/i.test(t.title)).map(t => titleCase(t.title.replace(/\s*trek\s*/i, '')));
+  const cities = [...new Set(events.map(e => e.city).filter(Boolean))];
+
+  const ways = [
+    { name: 'Backpacking trips', href: `${ORIGIN}/backpacking-trips`, img: `${PHOTOS.ladakh.src}?w=900&q=80&auto=format&fit=crop`, w: 3715, h: 2572,
+      where: ['Kerala', 'Leh Ladakh', 'Andaman Island', 'Meghalaya', 'Spiti Valley'] },
+    { name: 'Short Break trips', href: `${ORIGIN}/shortbreak-trips`, img: '/assets/roamers/trip-ooty.jpg', w: 1500, h: 1000,
+      where: ['Ooty', 'Pondicherry', 'Kolukkumalai', 'Kodaikanal', 'Chikmagalur'] },
+    { name: 'Treks & Camps', href: `${ORIGIN}/trips`, img: '/assets/roamers/trip-valley-of-flowers.jpg', w: 1440, h: 1801,
+      where: treks },
+    { name: 'Roamers Meetups', href: '#meetups', img: `${PHOTOS.meetup.src}?w=900&q=80&auto=format&fit=crop`, w: 3800, h: 2138,
+      where: cities },
+  ];
+
   return (
     <section className="ways" id="ways" data-chapter="03" data-chapter-name="Explore" aria-labelledby="ways-title">
       <div className="wrap">
         <div className="ways__head">
-          <p className="eyebrow mono">(05) Trip styles</p>
-          <h2 className="h-display" id="ways-title">Five ways<br />to <em>roam.</em></h2>
-          <p className="ways__lede">Read it like a contents page. Pick the pace that sounds like you.</p>
+          <p className="eyebrow mono">(05) Trips</p>
+          <h2 className="h-display" id="ways-title">Solo friendly.<br /><em>Group trips.</em></h2>
         </div>
         <ul className="ways__list">
-          <li className="way"><a href="https://www.roamers.in/backpacking-trips" data-img="/assets/img/cat-backpacking-900.webp">
-            <span className="way__n mono">01</span><span className="way__name">Backpacking</span><span className="way__desc">For the long way round.</span><span className="way__where mono">Kerala · Kodaikanal · Chikmagalur · Thailand</span>
-            <img className="way__thumb" src="/assets/img/cat-backpacking-900.webp" width="900" height="687" alt="" loading="lazy" /><i className="way__arrow" aria-hidden="true">→</i></a></li>
-          <li className="way"><a href="https://www.roamers.in/shortbreak-trips" data-img="/assets/img/cat-short-900.webp">
-            <span className="way__n mono">02</span><span className="way__name">Short Breaks</span><span className="way__desc">Friday night out, Sunday night home.</span><span className="way__where mono">Ooty · Kodaikanal · Pondicherry · Kolukkumalai</span>
-            <img className="way__thumb" src="/assets/img/cat-short-900.webp" width="900" height="720" alt="" loading="lazy" /><i className="way__arrow" aria-hidden="true">→</i></a></li>
-          <li className="way"><a href="https://www.roamers.in/trips" data-img="/assets/img/cat-treks-900.webp">
-            <span className="way__n mono">03</span><span className="way__name">Treks &amp; Camps</span><span className="way__desc">Summits, snow and a very large sky.</span><span className="way__where mono">Kedarkantha · Valley of Flowers · Kolukkumalai</span>
-            <img className="way__thumb" src="/assets/img/cat-treks-900.webp" width="900" height="530" alt="" loading="lazy" /><i className="way__arrow" aria-hidden="true">→</i></a></li>
-          <li className="way"><a href="https://www.roamers.in/trips" data-img="/assets/img/cat-intl-900.webp">
-            <span className="way__n mono">04</span><span className="way__name">International</span><span className="way__desc">Passports out, squad sorted.</span><span className="way__where mono">Sri Lanka · Thailand</span>
-            <img className="way__thumb" src="/assets/img/cat-intl-900.webp" width="900" height="1349" alt="" loading="lazy" /><i className="way__arrow" aria-hidden="true">→</i></a></li>
-          <li className="way"><a href="https://www.roamers.in/trips" data-img="/assets/img/cat-solo-900.webp">
-            <span className="way__n mono">05</span><span className="way__name">Solo-Friendly</span><span className="way__desc">Honestly? All of them. These are extra good for first-timers.</span><span className="way__where mono">Spiti · Meghalaya · Andaman</span>
-            <img className="way__thumb" src="/assets/img/cat-solo-900.webp" width="900" height="1200" alt="" loading="lazy" /><i className="way__arrow" aria-hidden="true">→</i></a></li>
+          {ways.map((w, i) => (
+            <li key={w.name} className="way"><a href={w.href} data-img={w.img}>
+              <span className="way__n mono">{String(i + 1).padStart(2, '0')}</span><span className="way__name">{w.name}</span>
+              <span className="way__where mono">{w.where.join(' · ')}</span>
+              <img className="way__thumb" src={w.img} width={w.w} height={w.h} alt="" loading="lazy" /><i className="way__arrow" aria-hidden="true">→</i></a></li>
+          ))}
         </ul>
       </div>
       <div className="ways__float" aria-hidden="true"><img alt="" /></div>

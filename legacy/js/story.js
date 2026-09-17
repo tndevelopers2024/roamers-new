@@ -76,13 +76,12 @@
     .to(cam, { p: 1, duration: 1, ease: 'none', onUpdate: renderHero }, 0)
     .to('.hero__over', { autoAlpha: 0, y: () => -innerHeight * .07, duration: .26, ease: 'power1.in' }, .03)
     .fromTo('.hero__end-line', { autoAlpha: 0, yPercent: 35 }, { autoAlpha: 1, yPercent: 0, duration: .24, ease: 'power2.out' }, .62)
-    .fromTo('.hero__end-fig', { autoAlpha: 0 }, { autoAlpha: 1, duration: .14 }, .72)
     .to({}, { duration: .12 });
 
   R.ready.then(() => {
     gsap.to(cam, { intro: 1, duration: 2.8, ease: 'expo.out', onUpdate: renderHero });
     gsap.from('.hero__solo .ln-i, .hero__squad .ln-i', { yPercent: 110, duration: 1.4, ease: 'expo.out', stagger: .12, delay: .15 });
-    gsap.from('.hero__fig, .hero__foot > *, .hero__scroll', { opacity: 0, y: 24, duration: 1.1, ease: 'power3.out', stagger: .08, delay: .55 });
+    gsap.from('.hero__foot > *', { opacity: 0, y: 24, duration: 1.1, ease: 'power3.out', stagger: .08, delay: .55 });
   });
 
   /* 02 STATEMENT — read at the speed of scroll ------------------------------- */

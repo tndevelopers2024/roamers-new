@@ -1,15 +1,18 @@
 import '@/styles/base.css';
 import '@/styles/sections.css';
+import { PHOTOS, imgProps } from '@/lib/images';
+
+const hero = imgProps(PHOTOS.hero.src, 1600, [1000, 1600, 2880]);
 
 export const metadata = {
   metadataBase: new URL('https://www.roamers.in'),
-  title: 'Roamers — Travel solo. Leave with a squad.',
+  title: 'Roamers - Explore the World with Our Social Travel Agency',
   description:
-    'Roamers is a social travel club. Book one seat, show up solo, and leave with a squad. Small-group trips to Ladakh, Spiti, Meghalaya, Kerala, Sri Lanka, Thailand and 40+ destinations.',
+    'Join Roamers, a social travel agency offering exciting solo trip packages, weekend getaways, and group travel experiences. Explore, connect, and create unforgettable memories with like-minded travelers!',
   openGraph: {
-    title: 'Roamers — Travel solo. Leave with a squad.',
-    description: 'Book one seat. Show up solo. Come home with a squad.',
-    images: ['/assets/img/hero-squad-1600.webp'],
+    title: 'Roamers | Your Gateway to Social Travel Adventures',
+    description: 'Discover the world with Roamers! From solo adventures to group travel, we create experiences that bring travelers together. Explore destinations, meet people, and make memories!',
+    images: ['/assets/hero-cliff.png'],
   },
   icons: {
     icon: '/assets/brand/favicon-64.png',
@@ -43,8 +46,8 @@ export default function RootLayout({ children }) {
         <link
           rel="preload"
           as="image"
-          href="/assets/img/hero-squad-1600.webp"
-          imageSrcSet="/assets/img/hero-squad-1000.webp 1000w, /assets/img/hero-squad-1600.webp 1600w, /assets/img/hero-squad-2880.webp 2880w"
+          href={hero.src}
+          imageSrcSet={hero.srcSet}
           imageSizes="200vw"
           fetchPriority="high"
         />

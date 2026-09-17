@@ -107,7 +107,7 @@ These are concept placeholders to replace:
 
 - **Roamers trip photography** (roamers.in): Ladakh riders, Pangong, Umling La, Spiti squad, Chandratal, Port Blair selfie, Valley of Flowers group and trek, Kedarkantha camps, Kolukkumalai campfire, Andaman, Munnar, Ooty, Galle, the monks.
 - **Unsplash (Unsplash License):**
-  - hero silhouettes `1506869640319`
+  - hero banner `1418854982207-12f710b74003`
   - departures board `1517400508447`
   - friends laughing `1491438590914`
   - forest campfire `1478131143081`

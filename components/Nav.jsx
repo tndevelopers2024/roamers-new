@@ -8,13 +8,13 @@ export default function Nav() {
       </a>
       <p className="nav__chapter mono" aria-hidden="true"><span className="nav__chapter-num">01</span><span className="nav__chapter-name">Discover</span></p>
       <nav className="nav__links" aria-label="Primary">
-        <a href="#trips">Trips</a>
-        <a href="#departures">Departures</a>
-        <a href="#ways">Experiences</a>
-        <a href="#meetups">Meetups</a>
-        <a href="#proof">About</a>
+        <a href="#departures">Upcoming Trips</a>
+        <a href="#trips">Backpacking</a>
+        <a href="#ways">Short Breaks</a>
+        <a href="#meetups">Community</a>
+        <a href="#contact">Contact</a>
       </nav>
-      <a className="btn btn--nav" href="#departures" data-magnetic><span>Book a seat</span><i className="btn__arrow" aria-hidden="true">→</i></a>
+      <a className="btn btn--nav" href="#departures" data-magnetic><span>Upcoming Trips</span><i className="btn__arrow" aria-hidden="true">→</i></a>
       <button className="nav__menu" type="button" aria-expanded="false" aria-controls="menu"><span className="nav__menu-label">Menu</span><i aria-hidden="true"></i></button>
     </header>
   );

@@ -5,6 +5,7 @@ import Cursor from '@/components/Cursor';
 import Nav from '@/components/Nav';
 import Menu from '@/components/Menu';
 import MobileBar from '@/components/MobileBar';
+import ScrollToTop from '@/components/ScrollToTop';
 import Footer from '@/components/Footer';
 
 import Hero from '@/components/sections/Hero';
@@ -15,13 +16,19 @@ import Departures from '@/components/sections/Departures';
 import Ways from '@/components/sections/Ways';
 import Season from '@/components/sections/Season';
 import People from '@/components/sections/People';
-import Community from '@/components/sections/Community';
 import Meetups from '@/components/sections/Meetups';
 import Stories from '@/components/sections/Stories';
 import Proof from '@/components/sections/Proof';
 import Finale from '@/components/sections/Finale';
 
-export default function Home() {
+import { getRoamersData } from '@/lib/roamers';
+
+/* Trips, prices and meetups are pulled from roamers.in and refreshed on this interval. */
+export const revalidate = 900;
+
+export default async function Home() {
+  const { trips, months, events, season } = await getRoamersData();
+
   return (
     <>
       <a className="skip" href="#main">Skip to content</a>
@@ -30,19 +37,18 @@ export default function Home() {
       <Curtain />
       <Cursor />
       <Nav />
-      <Menu />
+      <Menu next={trips[0]} />
 
       <main id="main">
         <Hero />
         <Statement />
+        <Departures trips={trips} months={months} />
         <How />
-        <Trips />
-        <Departures />
-        <Ways />
-        <Season />
+        <Trips trips={trips} />
+        <Ways trips={trips} events={events} />
+        <Season trips={season} />
         <People />
-        <Community />
-        <Meetups />
+        <Meetups events={events} />
         <Stories />
         <Proof />
         <Finale />
@@ -50,6 +56,7 @@ export default function Home() {
 
       <Footer />
       <MobileBar />
+      <ScrollToTop />
       <SiteMotion />
     </>
   );

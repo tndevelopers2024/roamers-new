@@ -18,18 +18,19 @@
 .hero__media { position: absolute; inset: 0; overflow: hidden; background: #0E2229; clip-path: inset(0px 0px 0px 0px); }
 .hero__img {
   position: absolute; left: 0; top: 0; width: 100%; height: 100%; max-width: none;
-  object-fit: cover; object-position: 38% 70%; transform-origin: 0 0; will-change: transform;
+  object-fit: cover; object-position: 80% 65%; transform-origin: 0 0; will-change: transform;
 }
 .hero__shade {
   position: absolute; inset: 0;
   background:
-    linear-gradient(180deg, rgba(14, 34, 41, .5) 0%, rgba(14, 34, 41, 0) 26%),
+    linear-gradient(180deg, rgba(14, 34, 41, .62) 0%, rgba(14, 34, 41, .28) 22%, rgba(14, 34, 41, 0) 42%),
     linear-gradient(0deg, rgba(14, 34, 41, .72) 0%, rgba(14, 34, 41, .15) 45%, rgba(14, 34, 41, 0) 60%);
 }
 .hero__ref { position: absolute; top: var(--ft); right: var(--fr); bottom: var(--fb); left: var(--fl); visibility: hidden; pointer-events: none; }
 
 .hero__over {
   position: absolute; inset: 0; z-index: 2; color: var(--ink-on-photo);
+  text-shadow: 0 2px 28px rgba(14, 34, 41, .38);        /* keeps white type readable over bright sky and cloud */
   display: grid; grid-template-rows: auto 1fr auto;
   padding: calc(var(--nav-h) + 1.25rem) var(--gutter) clamp(1.5rem, 3vh, 2.5rem);
 }
@@ -66,7 +67,7 @@
 /* --------------------------------------------------------------------------
    02 Statement
    -------------------------------------------------------------------------- */
-.statement { padding-block: clamp(6rem, 13vw, 12rem) clamp(5rem, 10vw, 9rem); }
+.statement { padding-top: clamp(2rem, 4vw, 3.5rem); padding-bottom: clamp(2.5rem, 5vw, 4.5rem); }
 .statement__text {
   font-family: var(--f-serif); font-weight: 400; font-size: clamp(2.3rem, 5.4vw, 6.3rem);
   line-height: 1.04; letter-spacing: -.02em; max-width: 21ch;
@@ -80,7 +81,7 @@
 .inline-img img { width: 100%; height: 100%; object-fit: cover; }
 .statement__grid {
   display: grid; grid-template-columns: 1fr 1fr; gap: 2rem 6vw;
-  margin-top: clamp(4rem, 9vw, 8rem); padding-top: 2rem; border-top: 1px solid var(--rule);
+  margin-top: clamp(2.5rem, 5vw, 4.5rem); padding-top: 2rem; border-top: 1px solid var(--rule);
 }
 .statement__lede { font-size: clamp(1.1rem, 1rem + .5vw, 1.45rem); line-height: 1.45; max-width: 32ch; }
 .pillars li { display: grid; grid-template-columns: 3.25rem 1fr; padding: 1.2rem 0; border-bottom: 1px solid var(--rule); }
@@ -92,7 +93,7 @@
 /* --------------------------------------------------------------------------
    03 How it works — Day 0 → Day 7, with a network of strangers forming
    -------------------------------------------------------------------------- */
-.how { background: var(--paper-2); color: var(--ink); padding-top: clamp(6rem, 12vw, 11rem); }
+.how { background: var(--paper-2); color: var(--ink); padding-top: clamp(3rem, 5vw, 4.5rem); }
 .how .eyebrow { color: var(--accent-ink); }
 .how__head { display: grid; grid-template-columns: 1fr auto; align-items: end; gap: 1rem 2rem; padding-bottom: clamp(3rem, 6vw, 6rem); }
 .how__head .eyebrow { grid-column: 1 / -1; margin-bottom: .5rem; }
@@ -163,7 +164,7 @@
 .chapter__name {
   position: absolute; z-index: 2; left: .35rem; bottom: -.1em; pointer-events: none;
   font-family: var(--f-display); font-variation-settings: "wdth" 62; font-weight: 800; text-transform: uppercase;
-  font-size: clamp(5rem, 13.5vw, 16rem); line-height: .8; letter-spacing: -.015em; white-space: nowrap; color: var(--ink-on-photo);
+  font-size: clamp(4rem, 9.5vw, 11.5rem); line-height: .8; letter-spacing: -.015em; white-space: nowrap; color: var(--ink-on-photo);
 }
 .chapter__line { grid-area: line; font-family: var(--f-serif); font-style: italic; font-size: clamp(1.5rem, 2.1vw, 2.2rem); line-height: 1.08; }
 .chapter__meta { grid-area: meta; align-self: end; display: grid; grid-template-columns: 1fr 1fr; gap: 1rem 1.5rem; padding-block: 1.5rem; }
@@ -192,7 +193,7 @@
    05 Upcoming departures — the booking board. Cards read like a manifest:
    hairline rules, mono data, one price and one action per card.
    -------------------------------------------------------------------------- */
-.deps { background: var(--paper-2); padding-block: clamp(6rem, 12vw, 11rem) clamp(4rem, 8vw, 7rem); }
+.deps { background: var(--paper-2); padding-block: clamp(3rem, 5vw, 4.5rem) clamp(2rem, 4vw, 3rem); }
 .deps__head { display: grid; grid-template-columns: 1fr minmax(0, 26rem); align-items: end; gap: 1.5rem 5vw; }
 .deps__head .eyebrow { grid-column: 1 / -1; margin-bottom: .5rem; }
 .deps__lede { color: var(--ink-muted); padding-bottom: .6rem; }
@@ -212,13 +213,10 @@
 .fchip.is-on { color: var(--ink); border-color: var(--accent-ink); background: rgba(78, 192, 219, .22); }
 .deps__count { color: var(--ink-muted); }
 
-.deps__grid {
-  display: grid; grid-template-columns: repeat(auto-fill, minmax(24rem, 1fr));
-  gap: clamp(1.5rem, 2.5vw, 2.25rem); margin-top: clamp(2rem, 4vw, 3rem);
-}
-.deps__empty { grid-column: 1 / -1; color: var(--ink-muted); padding: 4rem 0; text-align: center; }
+.deps__track { margin-top: clamp(2rem, 4vw, 3rem); }
+.deps__empty { color: var(--ink-muted); padding: 4rem 0; text-align: center; width: 100%; flex: 1; }
 
-.dep { position: relative; }
+.dep { position: relative; width: clamp(20rem, 28vw, 25rem); }
 .dep.is-out { display: none; }
 .dep__link {
   position: relative; display: flex; flex-direction: column; height: 100%;
@@ -296,7 +294,7 @@
 /* --------------------------------------------------------------------------
    06 Ways to roam — a contents page
    -------------------------------------------------------------------------- */
-.ways { position: relative; padding-block: clamp(6rem, 12vw, 11rem); }
+.ways { position: relative; padding-block: clamp(3rem, 5vw, 4.5rem); }
 .ways__head { display: grid; grid-template-columns: 1fr auto; align-items: end; gap: 1rem 2rem; margin-bottom: clamp(3rem, 6vw, 5rem); }
 .ways__head .eyebrow { grid-column: 1 / -1; margin-bottom: .5rem; }
 .ways__head .h-display em { color: var(--accent-ink); }
@@ -343,7 +341,7 @@
   position: relative; isolation: isolate; overflow: hidden;
   background: linear-gradient(180deg, var(--night) 0%, #0D2549 44%, var(--night-2) 100%);
   color: var(--ink-on-photo);
-  padding-block: clamp(5.5rem, 11vw, 10rem) clamp(4rem, 8vw, 7rem);
+  padding-block: clamp(3rem, 5vw, 4.5rem) clamp(2rem, 4vw, 3rem);
 }
 .season > * { position: relative; z-index: 2; }
 
@@ -460,7 +458,7 @@
    -------------------------------------------------------------------------- */
 .people { background: var(--paper); color: var(--ink); position: relative; }
 .people__stage { position: relative; height: 100vh; height: 100svh; overflow: hidden; display: grid; place-items: center; }
-.people__title { position: relative; z-index: 3; text-align: center; pointer-events: none; }
+.people__title { position: relative; z-index: 5; text-align: center; pointer-events: none; }
 .people__t1 {
   display: block; font-family: var(--f-display); font-variation-settings: "wdth" 62; font-weight: 800; text-transform: uppercase;
   font-size: clamp(3.4rem, 9vw, 10.5rem); line-height: .84; letter-spacing: -.01em;
@@ -481,7 +479,7 @@
    09 Community
    -------------------------------------------------------------------------- */
 /* The brand's own sky blue gets one full section — ink goes dark here to hold up */
-.community { --ink-muted: #10404F; background: var(--accent); color: var(--ink); padding-block: clamp(6rem, 12vw, 11rem); }
+.community { --ink-muted: #10404F; background: var(--accent); color: var(--ink); padding-block: clamp(3rem, 5vw, 4.5rem); }
 .community .btn::before { background: var(--ink-on-photo); }
 .community :focus-visible { outline-color: var(--ink); }
 .community__grid { display: grid; grid-template-columns: repeat(12, minmax(0, 1fr)); column-gap: 1.5rem; }
@@ -504,7 +502,7 @@
 /* --------------------------------------------------------------------------
    10 Meetups — the calendar as cards, date set like a ticket stub
    -------------------------------------------------------------------------- */
-.meets { background: var(--paper-2); padding-block: clamp(5rem, 10vw, 9rem) clamp(4rem, 8vw, 7rem); }
+.meets { background: var(--paper-2); padding-block: clamp(3rem, 5vw, 4.5rem) clamp(2rem, 4vw, 3rem); }
 .meets__head { display: grid; grid-template-columns: 1fr minmax(0, 26rem); align-items: end; gap: 1.5rem 5vw; }
 .meets__head .eyebrow { grid-column: 1 / -1; margin-bottom: .5rem; }
 .meets__lede { color: var(--ink-muted); padding-bottom: .6rem; }
@@ -546,7 +544,7 @@
 /* --------------------------------------------------------------------------
    11 Stories — postcards that stack
    -------------------------------------------------------------------------- */
-.stories { background: var(--paper); padding-top: clamp(6rem, 12vw, 11rem); }
+.stories { background: var(--paper); padding-top: clamp(3rem, 5vw, 4.5rem); }
 .stories__head { padding-bottom: clamp(3rem, 6vw, 5rem); }
 .stories__head .h-display em { color: var(--accent-ink); }
 .story { position: sticky; top: 0; height: 100vh; height: 100svh; padding: calc(var(--nav-h) + .5rem) var(--gutter) var(--gutter); }
@@ -567,19 +565,19 @@
 /* --------------------------------------------------------------------------
    12 Proof — a data poem
    -------------------------------------------------------------------------- */
-.proof { padding-block: clamp(6rem, 12vw, 11rem); }
+.proof { padding-block: clamp(3rem, 5vw, 4.5rem); }
 .proof__poem { font-family: var(--f-serif); font-size: clamp(1.7rem, 3.4vw, 3.9rem); line-height: 1.12; letter-spacing: -.01em; }
 .proof__poem em { font-style: italic; }
 .proof__poem .num {
   display: inline-block; font-family: var(--f-display); font-variation-settings: "wdth" 62; font-weight: 800;
-  font-size: clamp(4.6rem, 14vw, 16.5rem); line-height: .8; letter-spacing: -.02em; vertical-align: -.06em;
+  font-size: clamp(2.5rem, 6vw, 6.5rem); line-height: .8; letter-spacing: -.02em; vertical-align: -.06em;
   font-variant-numeric: tabular-nums; margin-right: .06em;
 }
 .proof__poem .num--accent { color: var(--accent-ink); }
 .pw { display: inline; }
 .proof__base {
   display: grid; grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr); gap: 2.5rem 5vw;
-  margin-top: clamp(4rem, 8vw, 7rem); padding-top: 2rem; border-top: 1px solid var(--rule);
+  margin-top: clamp(2rem, 4vw, 3.5rem); padding-top: 2rem; border-top: 1px solid var(--rule);
 }
 .proof__list li { display: grid; grid-template-columns: 9.5rem 1fr; gap: 1rem; padding-block: 1.1rem; border-bottom: 1px solid var(--rule); }
 .proof__list li:first-child { padding-top: 0; }
@@ -599,13 +597,15 @@
 .finale__media img { width: 100%; height: 100%; object-fit: cover; transform: scale(1.1); }
 .finale__media::after { content: ""; position: absolute; inset: 0; background: linear-gradient(180deg, rgba(14, 34, 41, .6), rgba(14, 34, 41, .35) 45%, rgba(14, 34, 41, .85)); }
 .finale__credits {
-  position: absolute; z-index: 2; left: 50%; top: 64%; width: min(90vw, 34rem); margin-left: min(-45vw, -17rem);
+  position: absolute; z-index: 2; left: 50%; top: 100%; transform: translateX(-50%); width: min(90vw, 44rem);
   display: grid; gap: 2.4rem; text-align: center;
 }
 .finale__credits p { display: grid; gap: .55rem; }
 .finale__credits span { color: rgba(243, 250, 252, .72); }
 .finale__credits strong { font-family: var(--f-serif); font-weight: 400; text-transform: none; letter-spacing: -.01em; font-size: clamp(1.6rem, 2.6vw, 2.5rem); line-height: 1.1; color: var(--ink-on-photo); }
 .finale__end { position: relative; z-index: 3; display: grid; justify-items: center; gap: 1.25rem; text-align: center; padding: var(--gutter); }
+.finale__end > * { opacity: 0; visibility: hidden; }
+:is(.no-js, .is-static) .finale__end > * { opacity: 1; visibility: visible; }
 .finale__title span { display: block; font-family: var(--f-display); font-variation-settings: "wdth" 62; font-weight: 800; text-transform: uppercase; font-size: clamp(3.4rem, 10.5vw, 12rem); line-height: .84; letter-spacing: -.012em; }
 .finale__sub { font-family: var(--f-serif); font-style: italic; font-size: clamp(1.6rem, 3.2vw, 3.3rem); color: var(--cloud); line-height: 1.1; }
 .finale__ctas { display: flex; flex-wrap: wrap; justify-content: center; align-items: center; gap: 1.25rem 1.75rem; margin-top: 1.25rem; }
@@ -613,7 +613,7 @@
 /* --------------------------------------------------------------------------
    Footer
    -------------------------------------------------------------------------- */
-.footer { background: var(--paper-2); color: var(--ink); padding-top: clamp(4rem, 8vw, 7rem); padding-bottom: calc(1.5rem + env(safe-area-inset-bottom, 0)); overflow: hidden; }
+.footer { background: var(--paper-2); color: var(--ink); padding-top: clamp(2.5rem, 4vw, 4rem); padding-bottom: calc(1.5rem + env(safe-area-inset-bottom, 0)); overflow: hidden; }
 .footer__brand { display: flex; align-items: center; gap: 1.25rem; margin-bottom: clamp(3rem, 6vw, 5rem); }
 .footer__brand img { width: auto; height: clamp(4rem, 6vw, 5.5rem); }
 .footer__brand p {
@@ -629,7 +629,7 @@
 .footer__col p { color: var(--ink-muted); }
 .footer__mark {
   font-family: var(--f-display); font-variation-settings: "wdth" 62; font-weight: 900; text-transform: uppercase;
-  font-size: 26.5vw; line-height: .76; color: var(--cloud); letter-spacing: -.02em; text-align: center; white-space: nowrap; margin: 3rem 0 1.5rem;
+  font-size: 26.5vw; line-height: .76; color: var(--ink); letter-spacing: -.02em; text-align: center; white-space: nowrap; margin: 3rem 0 1.5rem;
 }
 .footer__base { display: flex; flex-wrap: wrap; justify-content: space-between; gap: .75rem 2rem; padding-top: 1.25rem; border-top: 1px solid var(--rule); color: var(--ink-muted); font-size: .64rem; }
 
@@ -722,7 +722,7 @@
   .cm__tag { bottom: -1.75rem; }
 
   /* Cards go single-file and near-full-bleed; the rails stay swipeable */
-  .deps__grid { grid-template-columns: 1fr; }
+  .dep { width: min(85vw, 24rem); }
   .deps__bar { align-items: flex-start; }
   .deps__count { order: -1; }
   .dep__media { aspect-ratio: 16 / 10; }
@@ -738,7 +738,7 @@
   .story__quote p { font-size: 1.45rem; }
   .story__who strong { font-size: 2rem; }
 
-  .proof__poem .num { font-size: 21vw; }
+  .proof__poem .num { font-size: clamp(2.2rem, 8vw, 4.5rem); }
   .proof__base { grid-template-columns: 1fr; }
   .proof__list li { grid-template-columns: 1fr; gap: .25rem; }
 
@@ -748,3 +748,8 @@
   .footer { padding-bottom: calc(6rem + env(safe-area-inset-bottom, 0)); }
   .footer__grid { grid-template-columns: 1fr 1fr; }
 }
+
+/* Live data from roamers.in ------------------------------------------------- */
+/* a trip roamers.in lists without its own photo gets the pin instead of stock */
+.dep__media--none { background: var(--navy) url(/assets/brand/roamers-pin.png) center 42% / auto 42% no-repeat; }
+.meet__slots:empty { display: none; }

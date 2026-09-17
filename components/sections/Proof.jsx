@@ -1,28 +1,29 @@
-/* 12 Trust — a data poem */
+/* 11 Trust — the numbers and contact details from roamers.in */
 export default function Proof() {
   return (
     <section className="proof" id="proof" data-chapter="05" data-chapter-name="Join" aria-labelledby="proof-title">
       <div className="wrap">
-        <p className="eyebrow mono" id="proof-title">(10) The fine print, in very large print</p>
+        <p className="eyebrow mono" id="proof-title">(09) Roamers in numbers</p>
         <p className="proof__poem">
-          <span className="pw">In</span> <span className="num" data-to="5" data-suffix="+">5+</span> <span className="pw">years,</span>
-          <span className="num num--accent" data-to="10" data-suffix="K+">10K+</span> <span className="pw"><em>travellers</em> have taken</span>
-          <span className="num" data-to="500" data-suffix="+">500+</span> <span className="pw">trips to</span>
-          <span className="num" data-to="40" data-suffix="+">40+</span> <span className="pw"><em>destinations</em> — and rated the whole thing</span>
-          <span className="num num--accent" data-to="4.9" data-decimals="1" data-suffix="★">4.9★</span>
+          <span className="num" data-to="500" data-suffix="+">500+</span> <span className="pw">Trips Completed ·</span>
+          <span className="num num--accent" data-to="10" data-suffix="K+">10K+</span> <span className="pw"><em>Happy Travelers</em> ·</span>
+          <span className="num" data-to="40" data-suffix="+">40+</span> <span className="pw">Destinations ·</span>
+          <span className="num num--accent" data-to="4.9" data-decimals="1" data-suffix="★">4.9★</span> <span className="pw"><em>Average Rating</em> ·</span>
+          <span className="num" data-to="5" data-suffix="+">5+</span> <span className="pw">Years of Adventure</span>
         </p>
-        <div className="proof__base">
+        <div className="proof__base" id="contact">
           <ul className="proof__list">
-            <li><span className="mono">Included</span>Transport, stays, meals on the itinerary, permits.</li>
-            <li><span className="mono">On the ground</span>A trip captain on every departure, local guides where it matters.</li>
-            <li><span className="mono">Before you go</span>A group chat, a packing list and a human you can call.</li>
+            <li><span className="mono">Support Line</span><a href="tel:+918122121066">+91 81221 21066</a></li>
+            <li><span className="mono">WhatsApp Us</span><a href="https://wa.me/918122121066">+91 81221 21066</a></li>
+            <li><span className="mono">Email Us</span><a href="mailto:info@roamers.in">info@roamers.in</a></li>
+            <li><span className="mono">Our Offices</span><a href="https://maps.google.com/?q=Chennai,India">Chennai &amp; Delhi, India</a></li>
+            <li><span className="mono">Office Hours</span>Mon – Sat: 9 AM – 7 PM IST</li>
           </ul>
           <div className="expert">
-            <p className="expert__title">Not sure which trip is your trip?</p>
-            <p className="expert__text">Talk to a travel expert — no pressure, no spam, just honest advice.</p>
+            <p className="expert__title">Talk To Our Travel Experts</p>
             <div className="expert__ctas">
-              <a className="btn" href="tel:+918122121066" data-magnetic><span>Call +91 81221 21066</span></a>
-              <a className="link" href="https://wa.me/918122121066">Request a call back on WhatsApp</a>
+              <a className="btn" href="https://www.roamers.in/#contact-roamers" data-magnetic><span>Request Call Back</span></a>
+              <a className="link" href="https://wa.me/918122121066">WhatsApp Us</a>
             </div>
           </div>
         </div>

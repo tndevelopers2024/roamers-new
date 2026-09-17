@@ -146,9 +146,9 @@
     sync();
   });
 
-  /* In-page anchors glide; outbound trip links get a curtain ------------------ */
-  const curtain = d.querySelector('.curtain'), curtainLabel = curtain.querySelector('.curtain__label');
-  gsap.set(curtain, { y: 0, yPercent: 100 }); // GSAP reads the CSS translateY(100%) as px; normalise to percent
+  /* In-page anchors glide; external links do not redirect -------------------- */
+  const curtain = d.querySelector('.curtain');
+  if (curtain) gsap.set(curtain, { y: 0, yPercent: 100, pointerEvents: 'none' });
   d.addEventListener('click', e => {
     const a = e.target.closest('a'); if (!a || e.defaultPrevented) return;
     const href = a.getAttribute('href') || '';
@@ -158,16 +158,11 @@
       R.scrollTo(el && href !== '#top' ? el : 0);
       return;
     }
-    if (reduce || e.metaKey || e.ctrlKey || e.shiftKey || a.target === '_blank' || !/roamers\.in/.test(href)) return;
-    e.preventDefault(); closeMenu();
-    const nameEl = a.querySelector('.way__name, .chapter__name');
-    curtainLabel.textContent = a.dataset.transition || (nameEl ? nameEl.textContent : 'Roamers');
-    gsap.timeline({ onComplete: () => { location.href = a.href; } })
-      .set(curtain, { y: 0, yPercent: 100, pointerEvents: 'auto' })
-      .to(curtain, { yPercent: 0, duration: .85, ease: 'expo.inOut' })
-      .from(curtainLabel, { yPercent: 70, opacity: 0, duration: .55, ease: 'power3.out' }, '-=.35');
+    // Prevent redirect to external links
+    e.preventDefault();
+    closeMenu();
   });
-  addEventListener('pageshow', e => { if (e.persisted) gsap.set(curtain, { y: 0, yPercent: 100, pointerEvents: 'none' }); });
+  addEventListener('pageshow', e => { if (e.persisted && curtain) gsap.set(curtain, { y: 0, yPercent: 100, pointerEvents: 'none' }); });
 
   /* Cursor + magnetic buttons (fine pointers only) ---------------------------- */
   if (fine && !reduce) {

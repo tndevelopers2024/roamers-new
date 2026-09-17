@@ -1,20 +1,26 @@
 /* Menu overlay — tablet and mobile */
-export default function Menu() {
+import { titleCase } from '@/lib/roamers';
+import { imgProps } from '@/lib/images';
+
+export default function Menu({ next }) {
+  const when = next && new Date(next.next).toLocaleDateString('en-IN', { weekday: 'short', day: '2-digit', month: 'short', timeZone: 'UTC' });
   return (
     <div className="menu" id="menu" aria-hidden="true">
       <div className="menu__inner">
         <nav className="menu__links" aria-label="Menu">
-          <a href="#departures"><span className="mono">01</span>Departures</a>
-          <a href="#trips"><span className="mono">02</span>Trips</a>
-          <a href="#season"><span className="mono">03</span>Season</a>
+          <a href="#departures"><span className="mono">01</span>Upcoming Trips</a>
+          <a href="#trips"><span className="mono">02</span>Backpacking</a>
+          <a href="#season"><span className="mono">03</span>Christmas &amp; New Year</a>
           <a href="#meetups"><span className="mono">04</span>Meetups</a>
-          <a href="#proof"><span className="mono">05</span>About</a>
+          <a href="#contact"><span className="mono">05</span>Contact</a>
         </nav>
-        <a className="menu__next" href="https://www.roamers.in/ladakh-circuit">
-          <img src="/assets/img/ch-ladakh-900.webp" width="900" height="439" alt="" loading="lazy" />
-          <span className="mono">Next departure</span>
-          <strong>Ladakh — Sat, 19 Sep</strong>
-        </a>
+        {next && (
+          <a className="menu__next" href={next.url || 'https://www.roamers.in/trips'}>
+            {next.image && <img {...imgProps(next.image, 900, [640, 1000])} sizes="90vw" alt="" loading="lazy" />}
+            <span className="mono">Next departure</span>
+            <strong>{titleCase(next.title)} — {when}</strong>
+          </a>
+        )}
         <div className="menu__contact mono">
           <a href="tel:+918122121066">+91 81221 21066</a>
           <a href="https://wa.me/918122121066">WhatsApp</a>
